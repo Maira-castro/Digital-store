@@ -1,0 +1,76 @@
+:root {
+  font-family: Inter, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+    font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  /*color*/
+  --primary-color: #C92071;
+  --secundary-color: #B5B6F2;
+  --tertiary-color: #991956;
+  --error: #EE4266;
+  --success: #52CA76;
+  --warning: #F6AA1C;
+  /*Grayscale*/
+  --dark-gray: #1F1F1F;
+  --dark-gray-2: #474747;
+  --dark-gray-3: #666666;
+  --light-gray: #8F8F8F;
+  --light-gray-2: #CCCCCC;
+  --light-gray-3: #F5F5F5;
+  --white: #ffffff;
+}
+
+* {
+  font-family: Inter, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  justify-content: center;
+  align-items: center;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+}
+
+.cad-button>a {
+  color: var(--dark-gray);
+  margin-right: 20px;
+}
+
+.cad-button>button {
+  margin-left: 20px;
+  color: var(--white);
+  background-color: var(--primary-color);
+  padding: 10px 40px;
+  font-size: 15px;
+  border-radius: 10px;
+  border-style: none;
+}
+
+.menu-nav>ul, li {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 10px;
+}
+
+.menu-nav>ul>li>a {
+  text-decoration: none;
+  color: #1F1F1F;
+}
+
+
+
