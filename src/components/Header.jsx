@@ -12,7 +12,7 @@ const Header = () => {
           <a href="">Cadastre-se</a>
           <button>Entrar</button>
         </div>
-        <img src="./src/assets/mini-cart.svg" alt="mini-cart" />
+        <img src="/src/assets/mini-cart.svg" alt="mini-cart" />
       </div>
       <div className="menu-nav">
         <ul>
