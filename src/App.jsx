@@ -1,18 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Header from './components/Header'
-import Home from './paginas/Home'
+import Header from './components/Header';
+import Home from './paginas/Home';
+import {Colecao} from './paginas/Home';
+import "primeflex/primeflex.css";
+import "primeicons/primeicons.css";
+import "./index.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
+    <div >
       <Header />
       <Home />
-    </>
+      <Colecao />
+    </div>
   )
 }
 
