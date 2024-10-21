@@ -42,7 +42,7 @@ export const Colecao = () => {
       <div className="py-2 text-xl">
         <h3>Coleções em destaque</h3>
       </div>
-      <div className="flex my-0 pb-5 grid justify-content-center text-xl gap-3">
+      <div className="flex my-0 pb-5 grid justify-content-center text-2xl gap-3">
         <div className=" col p-5 border-round-lg" style={{background: 'var(--colecao)' }}>
           <p className="px-3 py-2 w-max border-round-2xl text-black-alpha-70"
             style={{ background: "var(--promo)" }}>
@@ -51,9 +51,9 @@ export const Colecao = () => {
           <h2 >
             Novo drop <br /> Supreme
           </h2>
-          <button className="font-bold border-none px-6 py-3 border-round-lg cursor-pointer text-xl" style={{ background: "var(--white)", color: "var(--primary-color)" }}>Comprar</button>
+          <button className="font-bold border-none px-6 py-3 border-round-lg cursor-pointer text-xl" style={{ background: "var(--white)", color: "var(--primary-color)", }}>Comprar</button>
         </div>
-        <div className=" p-5 border-round-lg col " style={{background: 'var(--colecao)', backgroundImage:'./assets/coleção/2-adidas.svg' }}>
+        <div className=" p-5 border-round-lg col " style={{background: 'var(--colecao)', backgroundImage:'./src/assets/coleção/2-adidas.svg' }}>
           <p className="px-3 py-2 w-max border-round-2xl text-black-alpha-70"
             style={{ background: "var(--promo)"}}>
             <b>30% OFF</b>
