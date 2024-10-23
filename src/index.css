@@ -10,8 +10,7 @@ body {
 }
 
 :root {
-  font-family: Inter, sans-serif;
-  font-weight: 500;
+  
     font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -28,23 +27,8 @@ a {
 }
 
 :root {
-  /*color*/
-  --primary-color: #C92071;
-  --secundary-color: #B5B6F2;
-  --tertiary-color: #991956;
-  --error: #EE4266;
-  --success: #52CA76;
-  --warning: #F6AA1C;
-  --promo: #E7FF86;
-  --colecao: #D8E3F2;
-  /*Grayscale*/
-  --dark-gray: #1F1F1F;
-  --dark-gray-2: #474747;
-  --dark-gray-3: #666666;
-  --light-gray: #8F8F8F;
-  --light-gray-2: #CCCCCC;
-  --light-gray-3: #F5F5F5;
-  --white: #ffffff;
+  
+
 }
 
 .button-destaque {
