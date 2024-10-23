@@ -1,3 +1,8 @@
+@import 'primereact/resources/themes/saga-blue/theme.css';   /* Você pode escolher outro tema */
+@import 'primereact/resources/primereact.min.css';
+@import 'primeicons/primeicons.css';
+@import 'primeflex/primeflex.css';
+
 body {
   margin: 0;
   padding: 0;
@@ -15,6 +20,11 @@ body {
 
 h1 {
   font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+  color: #CCCCCC;
 }
 
 :root {

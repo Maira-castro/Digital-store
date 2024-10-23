@@ -10,7 +10,7 @@ const Home = () => {
         <h6 className="text-3xl m-0" style={{ color: "var(--warning)" }}>
           Melhores ofertas personalizadas
         </h6>
-        <h1 className="text-8xl m-0 mt-3">
+        <h1 className="text-8xl m-0 mt-3 line-height-1">
           Queima de
           <br /> stoque Nike 🔥
         </h1>
@@ -28,7 +28,7 @@ const Home = () => {
       <div className="h-screen align-content-center">
         <img
           className="h-full w-full -ml-8"
-          src="/src/assets/home-img.svg"
+          src="/public/assets/home-img.svg"
           alt="foto-tenis-nikea-air"
         />
       </div>
@@ -39,11 +39,11 @@ const Home = () => {
 export const Colecao = () => {
   return (
     <section className="overflow-x-hidden pl-8 pr-8 ">
-      <div className="py-2 text-xl">
+      <div className="py-2 text-3xl">
         <h3>Coleções em destaque</h3>
       </div>
-      <div className="flex my-0 pb-5 grid justify-content-center text-2xl gap-3">
-        <div className=" col p-5 border-round-lg" style={{background: 'var(--colecao)' }}>
+      <div className="flex my-0 pb-5 grid justify-content-center text-3xl gap-4">
+        <div className="col p-5 border-round-lg bg-contain bg-no-repeat bg-right " style={{background: 'var(--colecao)', backgroundImage: 'url(./public/assets/coleção/1-supreme.svg)' }}>
           <p className="px-3 py-2 w-max border-round-2xl text-black-alpha-70"
             style={{ background: "var(--promo)" }}>
             <b>30% OFF</b>
@@ -51,9 +51,9 @@ export const Colecao = () => {
           <h2 >
             Novo drop <br /> Supreme
           </h2>
-          <button className="font-bold border-none px-6 py-3 border-round-lg cursor-pointer text-xl" style={{ background: "var(--white)", color: "var(--primary-color)", }}>Comprar</button>
+          <button className="font-bold border-none px-6 py-3 border-round-lg cursor-pointer text-2xl" style={{ background: "var(--white)", color: "var(--primary-color)", }}>Comprar</button>
         </div>
-        <div className=" p-5 border-round-lg col " style={{background: 'var(--colecao)', backgroundImage:'./src/assets/coleção/2-adidas.svg' }}>
+        <div className=" p-5 border-round-lg col bg-contain bg-no-repeat bg-right" style={{background: 'var(--colecao)', backgroundImage: 'url(./public/assets/coleção/2-adidas.svg)' }}>
           <p className="px-3 py-2 w-max border-round-2xl text-black-alpha-70"
             style={{ background: "var(--promo)"}}>
             <b>30% OFF</b>
@@ -61,9 +61,9 @@ export const Colecao = () => {
           <h2 >
             Coleção <br /> Adidas
           </h2>
-          <button className="font-bold button-destaque border-none px-6 py-3 border-round-lg cursor-pointer text-xl " style={{background: "var(--white)", color: "var(--primary-color)" }}>Comprar </button>
+          <button className="font-bold button-destaque border-none px-6 py-3 border-round-lg cursor-pointer text-2xl " style={{background: "var(--white)", color: "var(--primary-color)" }}>Comprar </button>
         </div>
-        <div className="p-5 border-round-lg col " style={{background: 'var(--colecao)' }}>
+        <div className="p-5 border-round-lg col bg-contain bg-no-repeat bg-right" style={{background: 'var(--colecao)', backgroundImage: 'url(./public/assets/coleção/3-BeatsBass.svg)' }}>
           <p
             className="px-3 py-2 w-max border-round-2xl text-black-alpha-70"
             style={{ background: "var(--promo)" }}>
@@ -73,7 +73,7 @@ export const Colecao = () => {
             Novo <br />
             Beats Bass
           </h2>
-          <button className="font-bold border-none px-6 py-3 border-round-lg cursor-pointer text-xl" style={{ background: "var(--white)", color: "var(--primary-color)" }}>Comprar</button>
+          <button className="font-bold border-none px-6 py-3 border-round-lg cursor-pointer text-2xl" style={{ background: "var(--white)", color: "var(--primary-color)" }}>Comprar</button>
         </div>
       </div>
     </section>

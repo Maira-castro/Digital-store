@@ -11,10 +11,9 @@ const Header = () => {
           alt="Logo-header-top"/>
         </div>
        
-        <div className="align-items-center ">
-          <span>
-        <inputText className=" py-3 -m-8 px-8 border-round-md border-none" style={{ backgroundColor: "var(--light-gray-3)" }} type="search" />
-        </span>
+        <div className="flex p-5 ">
+            <inputtext type="text" placeholder="Pesquisar produto..." />
+            <button icon="pi pi-search" className="button-rounded p-button-secondary ml-2" />
         </div>
 
         <div className="align-items-center flex gap-5 -mr-8 text-lg">
@@ -31,7 +30,7 @@ const Header = () => {
         </button>
         </div>
         </div>
-        <div className="align-items-center -ml-8 mr-5"><img className="mr-8 pr-8 h-2rem" src="/src/assets/mini-cart.svg" alt="mini-cart" /></div>
+        <div className="align-items-center -ml-8 mr-5"><img className="mr-8 pr-8 h-2rem" src="/public/assets/mini-cart.svg" alt="mini-cart" /></div>
       </div>
       <div className="mt-6">
         <ul className="flex gap-5 list-none -mb-2 p-0 text-xl ">
