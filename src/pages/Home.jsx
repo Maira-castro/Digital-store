@@ -19,7 +19,8 @@ const Home = () => {
           laboris eiusmod irure consectetur.
         </p>
         <button
-          className="text-white border-none px-7 py-3 border-round-lg cursor-pointer text-xl"
+          className="transition-colors transition-duration-300 hover:bg-pink-800 hover:text-white
+          text-white border-none px-7 py-3 border-round-lg cursor-pointer text-xl"
           style={{ backgroundColor: "var(--primary-color)" }}
         >
           Ver Ofertas
@@ -51,7 +52,8 @@ export const Colecao = () => {
           <h2 >
             Novo drop <br /> Supreme
           </h2>
-          <button className="font-bold border-none px-6 py-3 border-round-lg cursor-pointer text-2xl" style={{ background: "var(--white)", color: "var(--primary-color)", }}>Comprar</button>
+          <button className="transition-colors transition-duration-300 hover:bg-primary hover:text-white
+          font-bold border-none px-6 py-3 border-round-lg cursor-pointer text-2xl" style={{ background: "var(--white)", color: "var(--primary-color)", }}>Comprar</button>
         </div>
         <div className=" p-5 border-round-lg col bg-contain bg-no-repeat bg-right" style={{background: 'var(--colecao)', backgroundImage: 'url(/assets/coleção/2-adidas.svg)' }}>
           <p className="px-3 py-2 w-max border-round-2xl text-black-alpha-70"
@@ -61,7 +63,8 @@ export const Colecao = () => {
           <h2 >
             Coleção <br /> Adidas
           </h2>
-          <button className="font-bold button-destaque border-none px-6 py-3 border-round-lg cursor-pointer text-2xl " style={{background: "var(--white)", color: "var(--primary-color)" }}>Comprar </button>
+          <button className="transition-colors transition-duration-300 hover:bg-primary hover:text-white
+          font-bold button-destaque border-none px-6 py-3 border-round-lg cursor-pointer text-2xl " style={{background: "var(--white)", color: "var(--primary-color)" }}>Comprar </button>
         </div>
         <div className="p-5 border-round-lg col bg-contain bg-no-repeat bg-right" style={{background: 'var(--colecao)', backgroundImage: 'url(/assets/coleção/3-BeatsBass.svg)' }}>
           <p
@@ -73,7 +76,8 @@ export const Colecao = () => {
             Novo <br />
             Beats Bass
           </h2>
-          <button className="font-bold border-none px-6 py-3 border-round-lg cursor-pointer text-2xl" style={{ background: "var(--white)", color: "var(--primary-color)" }}>Comprar</button>
+          <button className="transition-colors transition-duration-300 hover:bg-primary hover:text-white
+          font-bold border-none px-6 py-3 border-round-lg cursor-pointer text-2xl" style={{ background: "var(--white)", color: "var(--primary-color)" }}>Comprar</button>
         </div>
       </div>
     </section>

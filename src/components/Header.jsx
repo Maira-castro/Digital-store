@@ -25,7 +25,7 @@ const Header = () => {
         </div>
         <div className="align-items-center">
         <button
-          className="Button-Hover text-white border-none px-6 py-3 border-round-lg cursor-pointer text-lg"
+          className="transition-colors transition-duration-300 hover:bg-pink-800 hover:text-white text-white border-none px-6 py-3 border-round-lg cursor-pointer text-lg"
           style={{ backgroundColor: "var(--primary-color)" }}>
           Entrar
         </button>
