@@ -5,17 +5,17 @@ const Footer = () => {
         <footer className="h-auto" style={{backgroundColor:'var(--dark-gray)'}}>
       <div className="flex justify-content-between px-8 text-white py-6">
       <div className="">
-        <img className="mt-2" src="/public/assets/logo-footer.svg" alt="logo-footer" />
+        <img className="mt-2" src="/assets/logo-footer.svg" alt="logo-footer" />
         <p className="py-4">Lorem ipsum dolor sit amet, consectetur<br/> adipiscing elit, sed do eiusmod tempor<br/> incididunt ut labore et dolore.</p>
         <div className="flex gap-6 ">
         <i>
-          <a href="#"><img src="/public/assets/facebook.svg" alt="" /></a>
+          <a href="#"><img src="/assets/facebook.svg" alt="" /></a>
         </i>
         <i>
-          <a href=""><img src="/public/assets/instagram.svg" alt="" /></a>
+          <a href=""><img src="/assets/instagram.svg" alt="" /></a>
         </i>
         <i>
-          <a href=""><img src="/public/assets/x.svg" alt="" /></a>
+          <a href=""><img src="/assets/x.svg" alt="" /></a>
         </i>
         </div>
       </div>
