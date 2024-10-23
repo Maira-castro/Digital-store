@@ -43,7 +43,7 @@ export const Colecao = () => {
         <h3>Coleções em destaque</h3>
       </div>
       <div className="flex my-0 pb-5 grid justify-content-center text-3xl gap-4">
-        <div className="col p-5 border-round-lg bg-contain bg-no-repeat bg-right " style={{background: 'var(--colecao)', backgroundImage: 'url(./public/assets/coleção/1-supreme.svg)' }}>
+        <div className="col p-5 border-round-lg bg-contain bg-no-repeat bg-right " style={{background: 'var(--colecao)', backgroundImage: 'url(/public/assets/coleção/1-supreme.svg)' }}>
           <p className="px-3 py-2 w-max border-round-2xl text-black-alpha-70"
             style={{ background: "var(--promo)" }}>
             <b>30% OFF</b>
@@ -53,7 +53,7 @@ export const Colecao = () => {
           </h2>
           <button className="font-bold border-none px-6 py-3 border-round-lg cursor-pointer text-2xl" style={{ background: "var(--white)", color: "var(--primary-color)", }}>Comprar</button>
         </div>
-        <div className=" p-5 border-round-lg col bg-contain bg-no-repeat bg-right" style={{background: 'var(--colecao)', backgroundImage: 'url(./public/assets/coleção/2-adidas.svg)' }}>
+        <div className=" p-5 border-round-lg col bg-contain bg-no-repeat bg-right" style={{background: 'var(--colecao)', backgroundImage: 'url(/public/assets/coleção/2-adidas.svg)' }}>
           <p className="px-3 py-2 w-max border-round-2xl text-black-alpha-70"
             style={{ background: "var(--promo)"}}>
             <b>30% OFF</b>
@@ -63,7 +63,7 @@ export const Colecao = () => {
           </h2>
           <button className="font-bold button-destaque border-none px-6 py-3 border-round-lg cursor-pointer text-2xl " style={{background: "var(--white)", color: "var(--primary-color)" }}>Comprar </button>
         </div>
-        <div className="p-5 border-round-lg col bg-contain bg-no-repeat bg-right" style={{background: 'var(--colecao)', backgroundImage: 'url(./public/assets/coleção/3-BeatsBass.svg)' }}>
+        <div className="p-5 border-round-lg col bg-contain bg-no-repeat bg-right" style={{background: 'var(--colecao)', backgroundImage: 'url(/public/assets/coleção/3-BeatsBass.svg)' }}>
           <p
             className="px-3 py-2 w-max border-round-2xl text-black-alpha-70"
             style={{ background: "var(--promo)" }}>
