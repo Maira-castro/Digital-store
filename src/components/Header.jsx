@@ -1,4 +1,5 @@
 import React from "react";
+import { InputText } from 'primereact/inputtext';
 import { Transition } from "style-components";
 import styled from "styled-components";
 
@@ -11,12 +12,12 @@ const Header = () => {
           src="https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/154c105f9b1a127fb30ca797a224a9a301439ed5/assets/logo-header.svg"
           alt="Logo-header-top"/>
         </div>
-       
-        <div className="flex p-5 ">
-            <inputtext type="text" placeholder="Pesquisar produto..." />
-            <button icon="pi pi-search" className="button-rounded p-button-secondary ml-2" />
-        </div>
-
+        <div className="">
+      <span className="">
+        <InputText className="px-8 py-4 text-xl" placeholder="Busca" />
+        <i className=" pi pi-search" />
+      </span>
+      </div>
         <div className="align-items-center flex gap-5 -mr-8 text-lg">
           <div className="">
         <a href="" className="text-black-alpha-70 text-xl">

@@ -5,6 +5,7 @@ import {Colecao} from './pages/Home';
 import "primeflex/primeflex.css";
 import "primeicons/primeicons.css";
 import "./index.css";
+import Banner from './components/BannerPublicidade'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Home />
       <Colecao />
+      <Banner />
       <Footer />
     </section>
   )
