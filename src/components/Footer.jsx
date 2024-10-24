@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
       </div>
       </div>
-      <div className="px-8 flex justify-content-center text-white">
+      <div className="px-8 flex justify-content-center text-white border-top-1 mx-8 opacity-50">
         <h5>@ 2024 Digital College</h5>
       </div>
       

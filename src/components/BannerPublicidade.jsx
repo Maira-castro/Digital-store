@@ -7,7 +7,7 @@ const Banner = () => {
                 <img src="/assets/airoferta.png" alt="" />
             </div>
             <div className=" align-content-center mb-8">
-        <h6 className="text-xl m-0" style={{ color: "var(--warning)" }}>
+        <h6 className="text-xl m-0" style={{ color: "var(--primary-color)" }}>
         Oferta especial
         </h6>
         <h1 className="text-7xl m-0 mt-4 line-height-1 font-bold text-black-alpha-80">
