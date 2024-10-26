@@ -2,12 +2,12 @@ import React from "react";
 
 const Footer = () => {
     return(
-        <footer className="h-auto" style={{backgroundColor:'var(--dark-gray)'}}>
-      <div className="flex justify-content-between px-8 text-white py-6">
+        <footer className="px-12" style={{backgroundColor:'var(--dark-gray)'}}>
+      <div className="flex px-8 justify-between text-white py-16 ">
       <div className="">
         <img className="mt-2" src="/assets/logo-footer.svg" alt="logo-footer" />
-        <p className="py-4">Lorem ipsum dolor sit amet, consectetur<br/> adipiscing elit, sed do eiusmod tempor<br/> incididunt ut labore et dolore.</p>
-        <div className="flex gap-6 ">
+        <p className="py-6">Lorem ipsum dolor sit amet, consectetur<br/> adipiscing elit, sed do eiusmod tempor<br/> incididunt ut labore et dolore.</p>
+        <div className="flex gap-8 ">
         <i>
           <a href="#"><img src="/assets/facebook.svg" alt="" /></a>
         </i>
@@ -19,8 +19,8 @@ const Footer = () => {
         </i>
         </div>
       </div>
-      <div className="align-content-center justify-content-start">
-        <div className=""><h3>Informação</h3></div>
+      <div className="align-content-center justify-content-start leading-8">
+        <div className="text-lg pb-1"><h3>Informação</h3></div>
         <div className="">
           <ul className="list-none line-height-4 p-0">
           <li><a href="">Sobre Drip Store</a></li>
@@ -32,8 +32,8 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="categorias-footer">
-        <div className=""><h3>Categorias</h3></div>
+      <div className="categorias-footer leading-8">
+        <div className=" text-lg pb-1"><h3>Categorias</h3></div>
         <div className="text-left">
           <ul className="list-none no-underline line-height-4 p-0">
             <li><a href="">Camisetas</a></li>
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="contato-footer">
-        <div className="">
+        <div className="text-lg pb-1">
           <h3>Contato</h3>
         </div>
         <div className="">
@@ -56,8 +56,8 @@ const Footer = () => {
         </div>
       </div>
       </div>
-      <div className="px-8 flex justify-content-center text-white border-top-1 mx-8 opacity-50">
-        <h5>@ 2024 Digital College</h5>
+      <div className="flex justify-center pt-2 pb-12 border-t text-white opacity-50">
+        <h5 >@ 2024 Digital College</h5>
       </div>
       
     </footer>

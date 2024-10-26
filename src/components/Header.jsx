@@ -1,58 +1,62 @@
 import React from "react";
-import { InputText } from 'primereact/inputtext';
-import { Transition } from "style-components";
 import styled from "styled-components";
+import '../index.css'
 
 const Header = () => {
   return (
-    <header className="my-6 px-8">
-      <div className="flex align-items-center  justify-content-between">
-        <div className="align-items-center ">
-        <img className="h-4rem"
+    <header className=" px-20 py-10">
+      <div className="flex justify-between content-center">
+        <div className="">
+        <img className="h-auto w-80"
           src="https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/154c105f9b1a127fb30ca797a224a9a301439ed5/assets/logo-header.svg"
           alt="Logo-header-top"/>
         </div>
-        <div>
-      <span className="">
-        <InputText className="px-8 py-4 text-xl border-none border-round-xl" style={{backgroundColor:'var(--light-gray-3)'}} placeholder="Pesquisar Produtos..." />
-        <i className=" pi pi-search" style={{backgroundColor:'var(--light-gray-3)'}} />
+
+        <div className="search-box flex ">
+      <input type="text" placeholder="Pesquisar produto..." className="w-full  pl-5 pr-80 border-none  rounded-l-lg" style={{backgroundColor:'var(--light-gray-3)'}} />
+      <span className="search-icon rounded-r-lg" style={{backgroundColor:'var(--light-gray-3)'}}>
+        <svg className="w-8 h-8 mt-3 mx-2 text-gray-400 hover:text-pink-700 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-4.35-4.35m-2.4-2.4A7.5 7.5 0 1116.5 9a7.5 7.5 0 01-2.4 5.25z"></path>
+        </svg>
       </span>
-      </div>
-        <div className="align-items-center flex gap-5 -mr-8 text-lg">
-          <div className="">
-        <a href="" className="text-black-alpha-70 text-xl underline line">
+    </div>
+      
+        <div className=" flex gap-20">
+          <div className="content-center">
+        <a href="" className="opacity-80 text-black underline font-bold text-lg" >
           Cadastre-se
         </a>
         </div>
-        <div className="align-items-center">
-        <button
-          className="transition-colors transition-duration-300 hover:bg-pink-800 hover:text-white text-white border-none px-6 py-3 border-round-lg cursor-pointer text-lg"
-          style={{ backgroundColor: "var(--primary-color)" }}>
+        <div className="content-center">
+        <button className="border-none py-3 px-12 text-white hover:opacity-80 font-bold rounded-2xl" style={{backgroundColor:'var(--primary)'}}>
           Entrar
         </button>
         </div>
         </div>
-        <div className="align-items-center ml-8 mr-5"><img className="mr-8 pr-8 h-2rem" src="/assets/mini-cart.svg" alt="mini-cart" /></div>
+
+        <div className="content-center"><img className="w-8"  src="/assets/mini-cart.svg" alt="mini-cart" /></div>
       </div>
-      <div className="mt-6">
-        <ul className="flex gap-5 list-none -mb-2 p-0 text-xl ">
-          <li className="">
-            <a href="#" className="no-underline text-black-alpha-70">
+      
+
+      <div className="pt-12">
+        <ul className="flex gap-10 nav nav-underline text-xl text-gray-600">
+          <li className="hover:border-b-4 hover:text-pink-700 hover:border-pink-700">
+            <a className="menu-nav nav-link active" href="#" >
               Home
             </a>
           </li>
-          <li>
-            <a href="" className="no-underline text-black-alpha-70">
+          <li className="nav-item hover:border-b-4 hover:text-pink-700 hover:border-pink-700">
+            <a className="nav-link menu-nav " href="" >
               Produtos
             </a>
           </li>
-          <li>
-            <a href="" className="no-underline text-black-alpha-70">
+          <li className="nav-item hover:border-b-4  hover:text-pink-700 hover:border-pink-700">
+            <a className="nav-link menu-nav " href="" >
               Categorias
             </a>
           </li>
-          <li>
-            <a href="" className="no-underline text-black-alpha-70">
+          <li className=" hover:border-b-4 hover:text-pink-700 hover:border-pink-700">
+            <a className="nav-link menu-nav " href="" >
               Meus Pedidos
             </a>
           </li>

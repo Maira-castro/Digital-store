@@ -1,7 +1,6 @@
-@import 'primereact/resources/themes/saga-blue/theme.css';   /* Você pode escolher outro tema */
-@import 'primereact/resources/primereact.min.css';
-@import 'primeicons/primeicons.css';
-@import 'primeflex/primeflex.css';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 body {
   margin: 0;
@@ -29,7 +28,7 @@ a {
 
 :root {
   /*color*/
-  --primary-color: #C92071;
+  --primary: #C92071;
   --secundary-color: #B5B6F2;
   --tertiary-color: #991956;
   --error: #EE4266;
@@ -47,13 +46,22 @@ a {
   --white: #ffffff;
 }
 
-.Button-Hover {
-  background-color: var(--primary-color);
-  cursor: pointer;
+.menu-nav {
+  color: var(--dark-gray);
+  transition: color 0.3s ;
 }
 
-.Button-Hover:hover {
-  transition: background-color 0.3s;
+.menu-nav:hover {
+  color: var(--primary-color);
+}
+
+.button-Hover {
+  background-color: var(--white);
+  transition: background-color 0.3s ease;
+}
+
+.button-Hover:hover {
+  background-color: var(--primary)
 }
 
 
