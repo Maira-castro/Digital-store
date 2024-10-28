@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
       </div>
       </div>
-      <div className="flex justify-center pt-2 pb-12 border-t text-white opacity-50">
+      <div className="flex justify-center pt-2 pb-4 border-t text-white opacity-50">
         <h5 >@ 2024 Digital College</h5>
       </div>
       
