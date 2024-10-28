@@ -26,13 +26,6 @@ a {
   color: #CCCCCC;
 }
 
-:root {
-  /*color*/
-  
-  /*Grayscale*/
-  
-  white: #ffffff
-}
 
 .menu-nav {
   color: var(--dark-gray);

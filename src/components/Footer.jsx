@@ -2,11 +2,11 @@ import React from "react";
 
 const Footer = () => {
     return(
-        <footer className="px-12 overflow-x-hidden" style={{backgroundColor:'var(--dark-gray)'}}>
+        <footer className="px-12 overflow-x-hidden bg-dark-gray" >
       <div className="xl:flex xl:px-8 xl:justify-between text-white py-16 ">
       <div className="">
         <img className="mt-2" src="/assets/logo-footer.svg" alt="logo-footer" />
-        <p className="py-6">Lorem ipsum dolor sit amet, consectetur<br/> adipiscing elit, sed do eiusmod tempor<br/> incididunt ut labore et dolore.</p>
+        <p className="text-white-color py-6">Lorem ipsum dolor sit amet, consectetur<br/> adipiscing elit, sed do eiusmod tempor<br/> incididunt ut labore et dolore.</p>
         <div className="flex gap-8 ">
         <i>
           <a href="#"><img src="/assets/facebook.svg" alt="" /></a>
@@ -19,9 +19,9 @@ const Footer = () => {
         </i>
         </div>
       </div>
-      <div className="sm:flex sm:space-x-16 py-10">
+      <div className="ssm:flex ssm:space-x-16 py-10">
       <div className="align-content-center justify-content-start leading-8">
-        <div className="text-lg pb-1"><h3>Informação</h3></div>
+        <div className="text-lg pb-1 text-white-color"><h3>Informação</h3></div>
         <div className="">
           <ul className="list-none line-height-4 p-0">
           <li><a href="">Sobre Drip Store</a></li>
@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="categorias-footer leading-8 ">
-        <div className=" text-lg pb-1"><h3>Categorias</h3></div>
+        <div className=" text-lg pb-1 text-white-color"><h3>Categorias</h3></div>
         <div className="text-left">
           <ul className="list-none no-underline line-height-4 p-0">
             <li><a href="">Camisetas</a></li>
@@ -47,7 +47,7 @@ const Footer = () => {
       </div>
       </div>
       <div className="contato-footer">
-        <div className="text-lg pb-1">
+        <div className="text-lg pb-1 text-white-color">
           <h3>Contato</h3>
         </div>
         <div className="">
@@ -58,8 +58,8 @@ const Footer = () => {
         </div>
       </div>
       </div>
-      <div className="flex justify-center pt-2 pb-4 border-t text-white opacity-50">
-        <h5 >@ 2024 Digital College</h5>
+      <div className="flex justify-center pt-2 pb-4 border-t opacity-60 text-white-color">
+        <h5 className="text-white">@ 2024 Digital College</h5>
       </div>
       
     </footer>

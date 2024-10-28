@@ -107,17 +107,17 @@ const Header = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="">
-          <div className="ssm:flex ssm:flex-col ssm:gap-3 ssm:p-6 ssm:max-h-full">
+        <div className="ssm:flex ssm:content-between">
+          <div className="ssm:flex ssm:flex-col ssm:gap-6 ssm:p-9 ssm:h-full ssm:absolute ssm:bg-white-color ssm:rounded-br-lg">
             <h1>Páginas</h1>
             <a href="text-pink">Home</a>
             <a href="">Produtos</a>
             <a href="">Categorias</a>
             <a href="">Meus Pedidos</a>
 
-            <div className="ssm:border-t-primary flex">
+            <div className="ssm:border-t-primary ssm:flex ssm:flex-col ssm:text-center">
               <button>Entrar</button>
-              <a href="">cadastre-se</a>
+              <a className="" href="">cadastre-se</a>
             </div>
           </div>
         </div>

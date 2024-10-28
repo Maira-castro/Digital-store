@@ -19,6 +19,7 @@ module.exports = {
       'light-gray': '#8F8F8F',
       'light-gray-2': '#CCCCCC',
       'light-gray-3': '#F5F5F5',
+      'white-color': '#ffffff',
     },
     fontFamily: {
       sans: ['Inter', 'sans-serif']
