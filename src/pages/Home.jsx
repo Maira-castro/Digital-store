@@ -8,18 +8,18 @@ const Home = () => {
       className=""
       style={{ backgroundColor: "var(--light-gray-3)" }}
     >
-      <div className="px-20 flex h-screen">
-      <div className="content-center">
-        <h6 className="text-3xl font-bold" style={{ color: "var(--warning)" }}>
+      <div className="xl:px-20 sm:px-5 xl:flex xl:h-screen sm:place-content-center sm:grid">
+      <div className="xl:order-none sm:order-2 xl:content-center sm:text-sm">
+        <h6 className="xl:text-3xl font-bold sm:text-xl" style={{ color: "var(--warning)" }}>
           Melhores ofertas personalizadas
         </h6>
-        <h1 className="text-8xl">Queima de stoque Nike🔥</h1>
-        <p className="text-xl py-6">
+        <h1 className="xl:text-8xl sm:text-4xl">Queima de stoque Nike🔥</h1>
+        <p className="xl:text-xl xl:py-6 sm:text-lg sm:py-3">
           Consequat culpa exercitation mollit nisi excepteur do <br /> do tempor
           laboris eiusmod irure consectetur.
         </p>
         <button
-          className=" border-none content-center my-7 text-xl py-4 px-16 text-white font-bold rounded-2xl"
+          className=" border-none content-center xl:my-7 xl:text-xl xl:py-4 xl:px-16 text-white font-bold rounded-2xl sm:px-8 sm:py-2 sm:text-lg sm:my-2"
           style={{
             backgroundColor: isHovered
               ? "var(--tertiary-color)"
@@ -36,7 +36,7 @@ const Home = () => {
       </div>
       <div>
         <img
-          className="size-full w-screen"
+          className="xl:size-full xl:w-screen sm:order-1 xl:order-2"
           src="/assets/home-img.svg"
           alt="foto-tenis-nikea-air"
         />
@@ -70,7 +70,7 @@ export const Colecao = () => {
   };
 
   return (
-    <section className="overflow-x-hidden px-20 bg-gradient-to-t from-gray-100" style={{backgroundColor:'var(--light-gray-3)'}}>
+    <section className="overflow-x-hidden xl:px-20 lg:px-14 md:px-10 sm:px-5 bg-gradient-to-t from-gray-100" style={{backgroundColor:'var(--light-gray-3)'}}>
       <div className="py-2 my-7 flex justify-between">
         <h3 className="text-3xl">Coleções em destaque</h3>
       </div>

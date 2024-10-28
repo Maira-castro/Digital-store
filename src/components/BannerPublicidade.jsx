@@ -9,7 +9,7 @@ const Banner = () => {
         <div className="lg:flex lg:justify-center ">
           <img src="./assets/airoferta.png" alt="" />
         </div>
-        <div className="lg:pb-10">
+        <div className="lg:pb-10 sm:pb-10">
           <h4 className="text-lg" style={{color:'var(--primary)'}}><b>Oferta especial</b></h4>
           <h1 className="text-5xl py-2">Air Jordan edição <br /> de colecionador</h1>
           <p className="text-lg py-3">

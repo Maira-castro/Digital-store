@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
     return(
-        <footer className="px-12" style={{backgroundColor:'var(--dark-gray)'}}>
-      <div className="flex px-8 justify-between text-white py-16 ">
+        <footer className="px-12 overflow-x-hidden" style={{backgroundColor:'var(--dark-gray)'}}>
+      <div className="xl:flex xl:px-8 xl:justify-between text-white py-16 ">
       <div className="">
         <img className="mt-2" src="/assets/logo-footer.svg" alt="logo-footer" />
         <p className="py-6">Lorem ipsum dolor sit amet, consectetur<br/> adipiscing elit, sed do eiusmod tempor<br/> incididunt ut labore et dolore.</p>
@@ -19,6 +19,7 @@ const Footer = () => {
         </i>
         </div>
       </div>
+      <div className="sm:flex sm:space-x-16 py-10">
       <div className="align-content-center justify-content-start leading-8">
         <div className="text-lg pb-1"><h3>Informação</h3></div>
         <div className="">
@@ -32,7 +33,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="categorias-footer leading-8">
+      <div className="categorias-footer leading-8 ">
         <div className=" text-lg pb-1"><h3>Categorias</h3></div>
         <div className="text-left">
           <ul className="list-none no-underline line-height-4 p-0">
@@ -43,6 +44,7 @@ const Footer = () => {
             <li><a href="">Tênis</a></li>
           </ul>
         </div>
+      </div>
       </div>
       <div className="contato-footer">
         <div className="text-lg pb-1">
