@@ -8,13 +8,13 @@ const Home = () => {
       className=""
       style={{ backgroundColor: "var(--light-gray-3)" }}
     >
-      <div className="xl:px-20 sm:px-5 xl:flex xl:h-screen sm:place-content-center sm:grid">
-      <div className="xl:order-none sm:order-2 xl:content-center sm:text-sm">
-        <h6 className="xl:text-3xl font-bold sm:text-xl" style={{ color: "var(--warning)" }}>
+      <div className="">
+      <div className="">
+        <h6 className="" style={{ color: "var(--warning)" }}>
           Melhores ofertas personalizadas
         </h6>
-        <h1 className="xl:text-8xl sm:text-4xl">Queima de stoque Nike🔥</h1>
-        <p className="xl:text-xl xl:py-6 sm:text-lg sm:py-3">
+        <h1 className="">Queima de stoque Nike🔥</h1>
+        <p className="">
           Consequat culpa exercitation mollit nisi excepteur do <br /> do tempor
           laboris eiusmod irure consectetur.
         </p>
@@ -62,39 +62,37 @@ export const Colecao = () => {
   const styles = {
     button: (buttonId) => ({
       backgroundColor:
-        hoveredButton === buttonId ? "var(--primary)" : "var(--white)",
-      color: hoveredButton === buttonId ? "var(--white)" : "var(--primary)",
+        hoveredButton === buttonId ? "#C92071" : "#ffffff",
+      color: hoveredButton === buttonId ? "#ffffff" : "#C92071",
       cursor: "pointer",
       transition: "background-color 0.3s ease",
     }),
   };
 
   return (
-    <section className="overflow-x-hidden xl:px-20 lg:px-14 md:px-10 sm:px-5 bg-gradient-to-t from-gray-100" style={{backgroundColor:'var(--light-gray-3)'}}>
-      <div className="py-2 my-7 flex justify-between">
-        <h3 className="text-3xl">Coleções em destaque</h3>
+    <section className="overflow-x-hidden bg-gradient-to-t from-gray-100 ssm:px-2" style={{backgroundColor:'var(--light-gray-3)'}}>
+      <div className="">
+        <h3 className="">Coleções em destaque</h3>
       </div>
-      <div className="flex z-10 flex-wrap justify-between text-3xl gap-3 pb-5">
+      <div className="">
         <div
-          className="w-full sm:w-1/1 md:w-1/2 lg:w-1/4 flex-grow flex-shrink-0 pl-6 px-10 py-16 rounded-lg bg-right bg-no-repeat bg-contain"
+          className="w-full ssm:px-2 ssm:py-1 sm:w-1/1 md:w-1/2 lg:w-1/4 flex-grow flex-shrink-0 pl-6 px-10 py-16 rounded-lg bg-right bg-no-repeat bg-contain bg-colecao"
           style={{
-            backgroundColor: "var(--colecao)",
             backgroundImage: "url(/assets/coleção/1-supreme.svg)",
           }}
         >
-          <div className="text-left">
+          <div className="text-left ssm:p-2">
             <p
-              className="px-3 py-2 w-max rounded-2xl text-2xl text-gray-700"
-              style={{ backgroundColor: "var(--promo)" }}
+              className="ssm:px-1 ssm:py-1 ssm:text-base px-3 py-2 w-max rounded-2xl text-2xl text-gray-700 bg-promo"
             >
               <b>30% OFF</b>
             </p>
-            <h2 className="text-5xl font-bold my-7">
+            <h2 className="ssm:text-2xl text-5xl font-bold my-7">
               {" "}
               Novo drop <br /> Supreme{" "}
             </h2>
             <button
-              className=" font-bold border-none px-6 py-3 rounded-lg cursor-pointer text-2xl"
+              className="font-bold border-none ssm:px-3 ssm:py-2 ssm:text-lg px-6 py-3 rounded-lg cursor-pointer text-2xl"
               style={styles.button(1)}
               onMouseEnter={() => handleMouseEnter(1)}
               onMouseLeave={handleMouseLeave}
