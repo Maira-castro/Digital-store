@@ -23,7 +23,7 @@ const Footer = () => {
       <div className="align-content-center justify-content-start leading-8">
         <div className="text-lg pb-1 text-white-color"><h3>Informação</h3></div>
         <div className="">
-          <ul className="list-none line-height-4 p-0">
+          <ul className="list-none line-height-4 p-0 text-light-gray-2">
           <li><a href="">Sobre Drip Store</a></li>
           <li><a href="">Segurança</a></li>
           <li><a href="a">Wishlist</a></li>
@@ -36,7 +36,7 @@ const Footer = () => {
       <div className="categorias-footer leading-8 ">
         <div className=" text-lg pb-1 text-white-color"><h3>Categorias</h3></div>
         <div className="text-left">
-          <ul className="list-none no-underline line-height-4 p-0">
+          <ul className="list-none no-underline line-height-4 p-0 text-light-gray-2">
             <li><a href="">Camisetas</a></li>
             <li><a href="">Calças</a></li>
             <li><a href="">Bonés</a></li>
@@ -51,7 +51,7 @@ const Footer = () => {
           <h3>Contato</h3>
         </div>
         <div className="">
-          <ul className="list-none p-0">
+          <ul className="list-none p-0 text-light-gray-2">
           <li><a href="">Av. Santos Dumont, 1510 - 1 <br /> andar - Aldeota, Fortaleza - <br /> CE, 60150-161</a></li>
           <li className="pt-4"><a href="">(85) 3051-3411</a></li>
           </ul>

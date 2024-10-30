@@ -8,17 +8,17 @@ const Header = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <nav>
-      <div className="ssm:max-w-7xl mx-auto sm:px-6 xl:px-0 xl:py-8">
+    <nav className="">
+      <div className="ssm:max-w-7xl sm:px-6 xl:px-0 xl:py-12 mx-auto">
         <div
           className="flex 
  items-center justify-between h-16"
         >
-          <div className="flex items-center ssm:order-2 xl:order-1">
-            <div className="xl:order-1 ">
+          <div className="flex items-center ssm:order-2 xl:order-1 ">
+            <div className="xl:order-1 xl:-mx-60">
               {/* Logo   
  da sua loja */}
-              <img src="./assets/logo.svg" alt="Logo" className="ssm:size-32 xl:size-full" />
+              <img src="./assets/logo.svg" alt="Logo" className="ssm:size-32 xl:size-96 " />
             </div>
             <div className="xl:hidden md:block ssm:hidden">
               <div className="ml-10 flex items-baseline space-x-4">
@@ -39,10 +39,8 @@ const Header = () => {
             </div>
           </div>
 
-
-
           <div className="xl:order-3 md:block ssm:hidden">
-            <div className="ml-4 flex items-center md:ml-6">
+            <div className="ml-4 flex items-center md:ml-6 ">
             <button
                 className="border-none content-center my-3 ssm:rounded-lg ssm:text-base ssm:py-2 ssm:px-10 xl:text-base xl:py-2 xl:px-7 text-white font-bold rounded-2xl xl:order-2"
                 style={{
@@ -56,7 +54,7 @@ const Header = () => {
               >
                 Entrar
               </button>
-              <button className="bg-white hover:bg-gray-100 text-dark-gray-2 font-bold py-2 px-4 rounded">
+              <button className="bg-white hover:bg-gray-100 text-dark-gray-2 font-bold py-2 px-4 rounded underline">
                 Cadastre-se
               </button>
             </div>
@@ -116,32 +114,22 @@ const Header = () => {
               className={
                 isSearchOpen
                   ? "block xl:flex order-1 "
-                  : "hidden absolute top-full left-0 bg-white shadow-md rounded-md p-2"
+                  : "hidden absolute top-full left-0 bg-white shadow-md rounded-md p-4"
               }
             >
-              <input type="text" placeholder="Pesquisar" className="w-full xl:bg-light-gray-3 xl:pr-36 xl:pl-2 xl:py-4 xl:rounded-l-lg" />
+              <input type="text" placeholder="Pesquisar" className="w-full xl:bg-light-gray-3 xl:pr-36 xl:pl-2 xl:py-4 xl:rounded-l-lg " />
             </div>
 
             
           </div>
-          <div className="order-4 flex ssm:pr-8">
+          <div className="order-4 flex ssm:pr-8 xl:size-16 xl:-mr-36">
               <img src="./assets/mini-cart.svg" alt="" />
             </div>
         </div>
       </div>
 
-      <div className="ssm:hidden sm:hidden md:hidden xl:block xl:px-36 xl:pb-10">
-          <div className="">
-           <ul className="xl:flex xl:gap-10"> 
-            <li><a href="">Home</a></li>
-           <li> <a href="">Produtos</a></li>
-           <li> <a href="">Categorias</a></li>
-           <li> <a href="">Meus Pedidos</a></li></ul>
-          </div>
-        </div>
-
       {isMenuOpen && (
-        <div className="ssm:flex ssm:content-between">
+        <div className="ssm:flex ssm:content-between ">
           <div className="ssm:flex ssm:flex-col ssm:gap-6 ssm:p-9 ssm:h-full ssm:absolute ssm:bg-white-color ssm:rounded-br-lg">
             <h1>Páginas</h1>
             <a href="text-pink">Home</a>
@@ -149,7 +137,7 @@ const Header = () => {
             <a href="">Categorias</a>
             <a href="">Meus Pedidos</a>
 
-            <div className="ssm:border-t-primary ssm:flex ssm:flex-col ssm:text-center">
+            <div className="ssm:border-t-primary ssm:flex ssm:flex-col ssm:text-center border-t px-8 ">
               <button
                 className="border-none content-center my-3 ssm:rounded-lg ssm:text-base ssm:py-2 ssm:px-10 xl:text-lg xl:py-3 xl:px-14 text-white font-bold rounded-2xl "
                 style={{
@@ -163,8 +151,8 @@ const Header = () => {
               >
                 Entrar
               </button>
-              <a className="" href="">
-                cadastre-se
+              <a className=" underline cursor-pointer" href="">
+                Cadastre-se
               </a>
             </div>
           </div>

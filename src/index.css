@@ -21,11 +21,6 @@ h1 {
   font-weight: 900;
 }
 
-a {
-  text-decoration: none;
-  color: #CCCCCC;
-}
-
 
 .menu-nav {
   color: var(--dark-gray);

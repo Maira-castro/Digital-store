@@ -7,14 +7,14 @@ const Home = () => {
     <section className="ssm:px-2 ssm:justify-center ssm:text-center bg-light-gray-3 xl:px-12 xl:text-start">
   <div className="ssm:flex ssm:flex-col xl:h-full xl:content-center xl:flex-row xl:flex">
     <div className="ssm:order-2 xl:order-1 ssm:flex ssm:items-center ssm:justify-center xl:justify-start">
-      <div className="ssm:text-center xl:text-start">
-        <h6 className="ssm:text-primary ssm:text-sm xl:text-2xl xl:text-warning">
+      <div className="ssm:text-center xl:text-start ">
+        <h6 className="ssm:text-primary ssm:text-sm xl:text-3xl xl:text-warning">
           <b>Melhores ofertas personalizadas</b>
         </h6>
-        <h1 className="ssm:text-3xl xl:text-7xl">
+        <h1 className="ssm:text-3xl xl:text-8xl">
           Queima de <br className="ssm:block xl:hidden" /> estoque Nike 🔥
         </h1>
-        <p className="ssm:text-sm ssm:mt-2 xl:text-xl xl:mt-4">
+        <p className="ssm:text-sm ssm:mt-2 xl:text-2xl xl:mt-4">
           Consequat culpa exercitation mollit nisi excepteur do do tempor
           laboris eiusmod irure consectetur.
         </p>
@@ -33,9 +33,9 @@ const Home = () => {
         </button>
       </div>
     </div>
-    <div className="ssm:order-1 xl:order-2">
+    <div className="ssm:order-1 xl:order-2 xl:-ml-60">
       <img
-        className="xl:size-full xl:w-screen sm:order-1 xl:order-2"
+        className="xl:size-full xl:w-screen sm:order-1 xl:order-2 "
         src="/assets/home-img.svg"
         alt="foto-tenis-nike-air"
       />
@@ -163,7 +163,7 @@ export const Colecao = () => {
         <div className="flex justify-center pb-6 text-2xl">
         <h3 className="text-3xl">Coleções em destaque</h3>
         </div>
-        <div className="flex justify-center py-4 gap-16 text-lg text-gray-800">
+        <div className="flex justify-center py-4 gap-16 text-lg text-dark-gray-1">
           <div className="text-center">
             <div className="rounded-full p-5 flex justify-center" style={{backgroundColor:'var(--white)'}}>
             <img  src="./assets/coleção/1-camisetas.svg" alt="" /></div>
