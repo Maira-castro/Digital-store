@@ -19,7 +19,7 @@ const Footer = () => {
         </i>
         </div>
       </div>
-      <div className="ssm:flex ssm:space-x-16 py-10">
+      <div className="ssm:flex ssm:space-x-16 py-10 xl:hidden">
       <div className="align-content-center justify-content-start leading-8">
         <div className="text-lg pb-1 text-white-color"><h3>Informação</h3></div>
         <div className="">
@@ -45,6 +45,32 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      </div>
+      <div className="align-content-center justify-content-start leading-8 ssm:hidden xl:block">
+        <div className="text-lg pb-1 text-white-color"><h3>Informação</h3></div>
+        <div className="">
+          <ul className="list-none line-height-4 p-0 text-light-gray-2">
+          <li><a href="">Sobre Drip Store</a></li>
+          <li><a href="">Segurança</a></li>
+          <li><a href="a">Wishlist</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Trabalhe conosco</a></li>
+          <li><a href="">Meus Pedidos</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="categorias-footer leading-8 ssm:hidden xl:block">
+        <div className=" text-lg pb-1 text-white-color"><h3>Categorias</h3></div>
+        <div className="text-left">
+          <ul className="list-none no-underline line-height-4 p-0 text-light-gray-2">
+            <li><a href="">Camisetas</a></li>
+            <li><a href="">Calças</a></li>
+            <li><a href="">Bonés</a></li>
+            <li><a href="">Headphones</a></li>
+            <li><a href="">Tênis</a></li>
+          </ul>
+        </div>
       </div>
       <div className="contato-footer">
         <div className="text-lg pb-1 text-white-color">

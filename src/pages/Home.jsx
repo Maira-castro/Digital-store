@@ -159,33 +159,33 @@ export const Colecao = () => {
         </div>
       </div>
 
-      <div className="py-10">
+      <div className="py-10 ">
         <div className="flex justify-center pb-6 text-2xl">
         <h3 className="text-3xl">Coleções em destaque</h3>
         </div>
-        <div className="flex justify-center py-4 gap-16 text-lg text-dark-gray-1">
+        <div className="flex justify-center py-4 gap-16 text-lg text-dark-gray">
           <div className="text-center">
-            <div className="rounded-full p-5 flex justify-center" style={{backgroundColor:'var(--white)'}}>
+            <div className="rounded-full p-6 flex justify-center bg-white-color" >
             <img  src="./assets/coleção/1-camisetas.svg" alt="" /></div>
             <h4 className="text-xl">Camisetas</h4>
           </div>
           <div className="text-center">
-            <div className="rounded-full p-5 flex justify-center" style={{backgroundColor:'var(--white)'}}>
+            <div className="rounded-full p-6 flex justify-center bg-white-color" >
             <img  src="./assets/coleção/2-calças.svg" alt="" /></div>
             <h4 className="text-xl">Calças</h4>
           </div>
           <div className="text-center">
-            <div className="rounded-full p-5 flex justify-center" style={{backgroundColor:'var(--white)'}}>
+            <div className="rounded-full p-6 flex justify-center bg-white-color">
             <img className=""  src="./assets/coleção/2-calças.svg" alt="" /></div>
             <h4 className="text-xl">Bonés</h4>
           </div>
           <div className="text-center">
-            <div className="rounded-full p-5 flex justify-center" style={{backgroundColor:'var(--white)'}}>
+            <div className="rounded-full p-6 flex justify-center bg-white-color" >
             <img   src="./assets/coleção/4-phones.svg" alt="" /></div>
             <h4 className="text-xl">Headphones</h4>
           </div>
           <div className="text-center">
-            <div className="rounded-full p-5 flex justify-center" style={{backgroundColor:'var(--white)'}}>
+            <div className="rounded-full p-6 flex justify-center bg-white-color" >
             <img className="" src="./assets/coleção/5-tenis.svg" alt="" />
             </div>
             <h4 className="text-xl">Tênis</h4>

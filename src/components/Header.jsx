@@ -8,7 +8,7 @@ const Header = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <nav className="">
+    <nav className="xl:px-20">
       <div className="ssm:max-w-7xl sm:px-6 xl:px-0 xl:py-12 mx-auto">
         <div
           className="flex 
@@ -41,8 +41,8 @@ const Header = () => {
 
           <div className="xl:order-3 md:block ssm:hidden">
             <div className="ml-4 flex items-center md:ml-6 ">
-            <button
-                className="border-none content-center my-3 ssm:rounded-lg ssm:text-base ssm:py-2 ssm:px-10 xl:text-base xl:py-2 xl:px-7 text-white font-bold rounded-2xl xl:order-2"
+            <button 
+                className="border-none content-center my-3 ssm:rounded-lg ssm:text-base ssm:py-2 ssm:px-10 xl:text-xl xl:py-3 xl:px-10 text-white font-bold rounded-2xl xl:order-2"
                 style={{
                   backgroundColor: isHovered ? "#991956" : "#C92071",
                   color: "white",
@@ -54,11 +54,12 @@ const Header = () => {
               >
                 Entrar
               </button>
-              <button className="bg-white hover:bg-gray-100 text-dark-gray-2 font-bold py-2 px-4 rounded underline">
+              <button className="bg-white hover:bg-gray-100 text-dark-gray-2 font-bold py-2 px-4 rounded underline xl:text-xl xl:pr-10 xl:-ml-10">
                 Cadastre-se
               </button>
             </div>
           </div>
+          
           <div className="-mr-2 flex md:hidden ssm:order-1 xl:order-2 ssm:pl-8">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -86,7 +87,7 @@ const Header = () => {
                 />
               </svg>
             </button>
-          </div>
+          </div> 
 
           <div className="flex justify-center content-center ssm:order-3 xl:order-2">
             <button
@@ -117,7 +118,7 @@ const Header = () => {
                   : "hidden absolute top-full left-0 bg-white shadow-md rounded-md p-4"
               }
             >
-              <input type="text" placeholder="Pesquisar" className="w-full xl:bg-light-gray-3 xl:pr-36 xl:pl-2 xl:py-4 xl:rounded-l-lg " />
+              <input type="text" placeholder="Pesquisar" className="w-full xl:bg-light-gray-3 xl:pr-60 xl:ml-36 xl:pl-2 xl:py-4 xl:rounded-l-lg " />
             </div>
 
             
@@ -158,7 +159,16 @@ const Header = () => {
           </div>
         </div>
         
-      )}
+      )} <div className="ssm:hidden xl:block xl:pb-10 xl:-mt-2">
+        <ul className="flex gap-5 text-xl "> 
+          <div className="border-b-primary border-b-4">
+       <li className="bg-secundary px-3 "> 
+        <a href="" className="text-primary">Home</a></li></div>
+           <li> <a href="">Produtos</a></li>
+           <li><a href="">Categorias</a></li> 
+          <li>  <a href="">Meus Pedidos</a></li>
+          </ul>
+      </div>
     </nav>
   );
 };
