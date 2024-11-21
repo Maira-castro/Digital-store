@@ -1,0 +1,56 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+    font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+
+.menu-nav {
+  color: var(--dark-gray);
+  transition: color 0.3s ;
+}
+
+.menu-nav:hover {
+  color: var(--primary-color);
+}
+
+.button-Hover {
+  background-color: var(--white);
+  transition: background-color 0.3s ease;
+}
+
+.button-Hover:hover {
+  background-color: var(--primary)
+}
+
+.active-link {
+  border-bottom: 4px solid #C92071;
+  background-color: #B5B6F2;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  color: #C92071;
+}
+@media (max-width: 768px) {
+.filter-title {
+  display: none;
+}
+}
+
+
