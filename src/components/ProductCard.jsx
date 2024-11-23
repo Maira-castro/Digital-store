@@ -60,7 +60,7 @@ const Type = styled.h5`
 `;
 
 
-const ProductCard = ({id,image, name, price, priceDiscount, type }) => {
+const ProductCard = ({id,images = [], name, price, priceDiscount, type }) => {
   const navigate = useNavigate();
 
   const handleCardClick = () => {
@@ -70,7 +70,7 @@ const ProductCard = ({id,image, name, price, priceDiscount, type }) => {
   return (
     
     <Card onClick={handleCardClick}>
-      <Image src={image} alt={name} />
+      <Image src={images[0]?.src} alt={name} />
       <Type>{type}</Type>
       <ProductName>{name}</ProductName>
       <PriceContainer>

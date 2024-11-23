@@ -53,4 +53,21 @@ h1 {
 }
 }
 
+@media (max-width: 768px) {
+  .gallery-thumbnails img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery-thumbnails img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+
+
 

@@ -1,18 +1,19 @@
 import React, { useState, useEffect, useContext } from 'react';
 import ProductList from '../components/ProductList';
-import { Link } from 'react-router-dom';
 import SortProducts from '../components/SortProducts';
 import FilterGroup from '../components/FilterGroup';
 import Section from '../components/Section';
 import styled from 'styled-components';
 import { SearchContext } from '../components/SearchContext';
-import 'boxicons';
+import 'boxicons/css/boxicons.min.css';
 import "../index.css"
+import { useProducts } from '../components/ProductsContext';
 
 const PageContainer = styled.div`
   display: flex;
  flex-wrap: wrap; 
  background-color:#F5F5F5;
+ width: 100%;
 `;
 
 const Sidebar = styled.div`
@@ -70,153 +71,7 @@ const FilterButton = styled.button`
 `;
 
 const ProductListingPage = () => {
-  
-
-  const [products, setProducts] = useState([
-    { 
-      id:1,
-      name: "K-Swiss V8 - Masculino",
-      image: "./assets/produto.png",
-      price: 300,
-      priceDiscount: 249.9,
-      marka: 'k-swiss',
-      category: 'Esporte e lazer',
-      type: 'tenis',
-    },
-    { 
-      id:2,
-      name: "K-Swiss V8 - Masculino",
-      image: "./assets/produto.png",
-      price: 200,
-      priceDiscount: 149.9,
-      marka: 'k-swiss',
-      category: 'Esporte e lazer',
-      type: 'tenis',
-    },
-    { 
-      id:3,
-      name: "K-Swiss V8 - Masculino",
-      image: "./assets/produto.png",
-      price: 400,
-      priceDiscount: 389.9,
-      marka: 'k-swiss',
-      category: 'Casual',
-      type: 'tenis',
-    },
-    {
-      id:4,
-      name: "K-Swiss V8 - Masculino",
-      image: "./assets/produto.png",
-      price: 200,
-      priceDiscount: 149.9,
-      marka: 'k-swiss',
-      category: 'Esporte e lazer',
-      type: 'tenis',
-    },
-    {
-      id:5,
-      name: "K-Swiss V8 - Masculino",
-      image: "./assets/produto.png",
-      price: 49.9,
-      marka: 'k-swiss',
-      category: 'Esporte e lazer',
-      type: 'tenis',
-    },
-    {
-      id:6,
-      name: "K-Swiss V8 - Masculino",
-      image: "./assets/produto.png",
-      price: 59.9,
-      marka: 'k-swiss',
-      category: 'Esporte e lazer',
-      type: 'tenis',
-    },
-    {
-      id:7,
-      name: "K-Swiss V8 - Masculino",
-      image: "./assets/produto.png",
-      price: 69.9,
-      marka: 'k-swiss',
-      category: 'Casual',
-      type: 'tenis',
-    },
-    {
-      id:8,
-      name: "K-Swiss V8 - Masculino",
-      image: "./assets/produto.png",
-      price: 69.9,
-      marka: 'k-swiss',
-      category: 'Esporte e lazer',
-      type: 'tenis',
-    },
-    {
-      id:9,
-      name: "K-Swiss V8 - Masculino",
-      image: "./assets/produto.png",
-      price: 69.9,
-      marka: 'k-swiss',
-      category: 'Esporte e lazer',
-      type: 'tenis',
-    },
-    {
-      id:10,
-      name: "K-Swiss V8 - Masculino",
-      image: "./assets/produto.png",
-      price: 69.9,
-      marka: 'k-swiss',
-      category: 'Esporte e lazer',
-      type: 'tenis',
-    },
-    {
-      id:11,
-      name: "K-Swiss V8 - Masculino",
-      image: "./assets/produto.png",
-      price: 79.9,
-      marka: 'k-swiss',
-      category: 'Esporte e lazer',
-      type: 'tenis',
-    },
-    {
-      id:12,
-      name: "K-Swiss V8 - Masculino",
-      image: "./assets/produto.png",
-      price: 89.9,
-      marka: 'k-swiss',
-      category: 'Esporte e lazer',
-      type: 'tenis',
-    },
-    {
-      id:13,
-      name: "K-Swiss V8 - Masculino",
-      image: "./assets/produto.png",
-      price: 99.9,
-      marka: 'k-swiss',
-      category: 'Esporte e lazer',
-      type: 'tenis',
-    },
-    {
-      id:14,
-      name: "K-Swiss V8 - Masculino",
-      image: "./assets/produto.png",
-      price: 109.9,
-      marka: 'k-swiss',
-      category: 'Casual',
-      type: 'tenis',
-    },
-    {
-      id:15,
-      name: "K-Swiss V8 - Masculino",
-      image: "./assets/produto.png",
-      price: 109.9,
-      marka: 'k-swiss',
-      category: 'Esporte e lazer',
-      type: 'tenis',
-    },
-
-  ]);
-
-
-
+  const { products } = useProducts();
   const [filteredProducts, setFilteredProducts] = useState(products);
   const [sortedProducts, setSortedProducts] = useState(products);
   const [sortOrder, setSortOrder] = useState('priceAsc');

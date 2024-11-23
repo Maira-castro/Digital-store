@@ -1,0 +1,247 @@
+import React, { createContext, useContext, useState } from 'react';
+const ProductsContext = createContext();
+
+
+export const ProductsProvider = ({ children }) => {
+  const [products, setProducts] = useState([
+    { 
+        id:1,
+      name: "K-Swiss V8 - Masculino",
+      images: [
+        { src: "/assets/produto.png",backgroundColor: "white"},
+        { src: "/assets/produto.png",backgroundColor: "#ffcccb"  },
+        { src: "/assets/produto.png",backgroundColor: "#cfed64"  },
+      ],
+      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugiat soluta atque dolorem?',
+      price: 300,
+      priceDiscount: 249.9,
+      marka: 'k-swiss',
+      category: 'Esporte e lazer',
+      type: 'tenis',
+      stars: 5,
+    },
+    { 
+      id:2,
+      name: "K-Swiss V8 - Masculino",
+      images: [
+        { src: "/assets/produto.png",backgroundColor: "white"},
+        { src: "/assets/produto.png",backgroundColor: "#ffcccb"  },
+        { src: "/assets/produto.png",backgroundColor: "#cfed64"  },
+      ],
+      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugiat soluta atque dolorem?',
+      price: 200,
+      priceDiscount: 149.9,
+      marka: 'k-swiss',
+      category: 'Esporte e lazer',
+      type: 'tenis',
+      stars: 4,
+    },
+    { 
+      id:3,
+      name: "K-Swiss V8 - Masculino",
+      images: [
+        { src: "/assets/produto.png",backgroundColor: "white"},
+        { src: "/assets/produto.png",backgroundColor: "#ffcccb"  },
+        { src: "/assets/produto.png",backgroundColor: "#cfed64"  },
+      ],
+      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugiat soluta atque dolorem?',
+      price: 400,
+      priceDiscount: 389.9,
+      marka: 'k-swiss',
+      category: 'Casual',
+      type: 'tenis',
+      stars: 4,
+    },
+    {
+      id:4,
+      name: "K-Swiss V8 - Masculino",
+      images: [
+        { src: "/assets/produto.png",backgroundColor: "white"},
+        { src: "/assets/produto.png",backgroundColor: "#ffcccb"  },
+        { src: "/assets/produto.png",backgroundColor: "#cfed64"  },
+      ],
+      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugiat soluta atque dolorem?',
+      price: 200,
+      priceDiscount: 149.9,
+      marka: 'k-swiss',
+      category: 'Esporte e lazer',
+      type: 'tenis',
+      stars: 4,
+    },
+    {
+      id:5,
+      name: "K-Swiss V8 - Masculino",
+      images: [
+        { src: "/assets/produto.png",backgroundColor: "white"},
+        { src: "/assets/produto.png",backgroundColor: "#ffcccb"  },
+        { src: "/assets/produto.png",backgroundColor: "#cfed64"  },
+      ],
+      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugiat soluta atque dolorem?',
+      price: 49.9,
+      marka: 'k-swiss',
+      category: 'Esporte e lazer',
+      type: 'tenis',
+      stars: 4,
+    },
+    {
+      id:6,
+      name: "K-Swiss V8 - Masculino",
+      images: [
+        { src: "/assets/produto.png",backgroundColor: "white"},
+        { src: "/assets/produto.png",backgroundColor: "#ffcccb"  },
+        { src: "/assets/produto.png",backgroundColor: "#cfed64"  },
+      ],
+      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugiat soluta atque dolorem?',
+      price: 59.9,
+      marka: 'k-swiss',
+      category: 'Esporte e lazer',
+      type: 'tenis',
+      stars: 4,
+    },
+    {
+      id:7,
+      name: "K-Swiss V8 - Masculino",
+      images: [
+        { src: "/assets/produto.png",backgroundColor: "white"},
+        { src: "/assets/produto.png",backgroundColor: "#ffcccb"  },
+        { src: "/assets/produto.png",backgroundColor: "#cfed64"  },
+      ],
+      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugiat soluta atque dolorem?',
+      price: 69.9,
+      marka: 'k-swiss',
+      category: 'Casual',
+      type: 'tenis',
+      stars: 4,
+    },
+    {
+      id:8,
+      name: "K-Swiss V8 - Masculino",
+      images: [
+        { src: "/assets/produto.png",backgroundColor: "white"},
+        { src: "/assets/produto.png",backgroundColor: "#ffcccb"  },
+        { src: "/assets/produto.png",backgroundColor: "#cfed64"  },
+      ],
+      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugiat soluta atque dolorem?',
+      price: 69.9,
+      marka: 'k-swiss',
+      category: 'Esporte e lazer',
+      type: 'tenis',
+      stars: 4,
+    },
+    {
+      id:9,
+      name: "K-Swiss V8 - Masculino",
+      images: [
+        { src: "/assets/produto.png",backgroundColor: "white"},
+        { src: "/assets/produto.png",backgroundColor: "#ffcccb"  },
+        { src: "/assets/produto.png",backgroundColor: "#cfed64"  },
+      ],
+      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugiat soluta atque dolorem?',
+      price: 69.9,
+      marka: 'k-swiss',
+      category: 'Esporte e lazer',
+      type: 'tenis',
+      stars: 4,
+    },
+    {
+      id:10,
+      name: "K-Swiss V8 - Masculino",
+      images: [
+        { src: "/assets/produto.png",backgroundColor: "white"},
+        { src: "/assets/produto.png",backgroundColor: "#ffcccb"  },
+        { src: "/assets/produto.png",backgroundColor: "#cfed64"  },
+      ],
+      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugiat soluta atque dolorem?',
+      price: 69.9,
+      marka: 'k-swiss',
+      category: 'Esporte e lazer',
+      type: 'tenis',
+      stars: 4,
+    },
+    {
+      id:11,
+      name: "K-Swiss V8 - Masculino",
+      images: [
+        { src: "/assets/produto.png",backgroundColor: "white"},
+        { src: "/assets/produto.png",backgroundColor: "#ffcccb"  },
+        { src: "/assets/produto.png",backgroundColor: "#cfed64"  },
+      ],
+      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugiat soluta atque dolorem?',
+      price: 79.9,
+      marka: 'k-swiss',
+      category: 'Esporte e lazer',
+      type: 'tenis',
+      stars: 4,
+    },
+    {
+      id:12,
+      name: "K-Swiss V8 - Masculino",
+      images: [
+        { src: "/assets/produto.png",backgroundColor: "white"},
+        { src: "/assets/produto.png",backgroundColor: "#ffcccb"  },
+        { src: "/assets/produto.png",backgroundColor: "#cfed64"  },
+      ],
+      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugiat soluta atque dolorem?',
+      price: 89.9,
+      marka: 'k-swiss',
+      category: 'Esporte e lazer',
+      type: 'tenis',
+      stars: 4,
+    },
+    {
+      id:13,
+      name: "K-Swiss V8 - Masculino",
+      images: [
+        { src: "/assets/produto.png",backgroundColor: "white"},
+        { src: "/assets/produto.png",backgroundColor: "#ffcccb"  },
+        { src: "/assets/produto.png",backgroundColor: "#cfed64"  },
+      ],
+      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugiat soluta atque dolorem?',
+      price: 99.9,
+      marka: 'k-swiss',
+      category: 'Esporte e lazer',
+      type: 'tenis',
+      stars: 4,
+    },
+    {
+      id:14,
+      name: "K-Swiss V8 - Masculino",
+      images: [
+        { src: "/assets/produto.png",backgroundColor: "white"},
+        { src: "/assets/produto.png",backgroundColor: "#ffcccb"  },
+        { src: "/assets/produto.png",backgroundColor: "#cfed64"  },
+      ],
+      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugiat soluta atque dolorem?',
+      price: 109.9,
+      marka: 'k-swiss',
+      category: 'Casual',
+      type: 'tenis',
+      stars: 4,
+    },
+    {
+      id:15,
+      name: "K-Swiss V8 - Masculino",
+      images: [
+        { src: "/assets/produto.png",backgroundColor: "white"},
+        { src: "/assets/produto.png",backgroundColor: "#ffcccb"  },
+        { src: "/assets/produto.png",backgroundColor: "#cfed64"  },
+      ],
+      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugiat soluta atque dolorem?',
+      price: 109.9,
+      marka: 'k-swiss',
+      category: 'Esporte e lazer',
+      type: 'tenis',
+      stars: 4,
+    },
+
+  ]);
+
+  return (
+    <ProductsContext.Provider value={{ products, setProducts }}>
+      {children}
+    </ProductsContext.Provider>
+  );
+};
+
+// Hook para usar o contexto de produtos
+export const useProducts = () => useContext(ProductsContext);

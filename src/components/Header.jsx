@@ -1,9 +1,10 @@
 import React, { useState,useContext } from "react";
 import "../index.css";
-import {Link, NavLink} from "react-router-dom";
+import {Link, NavLink, useLocation} from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import { SearchContext } from "./SearchContext";
 const Header = () => {
+  const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
@@ -35,28 +36,12 @@ const Header = () => {
           className="flex 
  items-center justify-between h-16"
         >
-          <div className="flex items-center ssm:order-2 xl:order-1 xl:-ml-14">{/*add o ultimo xl*/}
-            <div className="xl:order-1">{/* xl:-mx-60*/}
-              {/* Logo   
- da sua loja */}
-              <img src="./assets/logo.svg" alt="Logo" className=" ssm:w-32 xl:w-96" />{/*ssm:size-32 xl:size-96*/}
+          <div className="flex items-center ssm:order-2 xl:order-1 xl:-ml-14">
+            <div className="xl:order-1">
+              <img src="./assets/logo.svg" alt="Logo" className=" ssm:w-32 xl:w-96" />
             </div>
             <div className="xl:hidden md:block ssm:hidden">
               <div className="ml-10 flex items-baseline space-x-4">
-                {/* Links de navegação para telas maiores */}
-                {/* <a href="#" className="text-gray-900 font-medium">
-                  Home
-                </a>
-                <a href="#" className="text-gray-900 font-medium">
-                  Produtos
-                </a>
-                <a href="#" className="text-gray-900 font-medium">
-                  Categorias
-                </a>
-                <a href="#" className="text-gray-900 font-medium">
-                  Meus Pedidos
-                </a> */}
-              
             
               <NavLink 
       to="/" 
@@ -64,12 +49,14 @@ const Header = () => {
     >
       Home
     </NavLink>
-    <NavLink 
-      to="/products" 
-      className={({ isActive }) => isActive ? "active-link" : ""}
-    >
-      Produtos
-    </NavLink>
+       <NavLink
+        to="/products"
+        className={({ isActive }) =>
+          isActive || location?.pathname.startsWith('/product') ? "active-link": ""
+        }
+      >
+        Produtos
+      </NavLink>
     <NavLink 
       to="/category" 
       className={({ isActive }) => isActive ? "active-link" : ""}
@@ -141,7 +128,7 @@ const Header = () => {
 
           <div className="flex justify-center content-center ssm:order-3 xl:order-2">
             <button
-              // onClick={() => setIsSearchOpen(!isSearchOpen)}
+              
               onClick={handleSearchToggle}
               className="bg-gray-200 hover:bg-gray-300 text-gray-700 p-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 order-2 xl:bg-light-gray-3 xl:rounded-r-lg xl:pl-1 "
             > 
@@ -189,11 +176,6 @@ const Header = () => {
         <div className="ssm:flex ssm:content-between ">
           <div className="ssm:flex ssm:flex-col ssm:gap-6 ssm:p-9 ssm:h-full ssm:absolute ssm:bg-white-color ssm:rounded-br-lg">
             <h1>Páginas</h1>
-            {/* <a href="text-pink">Home</a> 
-             <a href="">Produtos</a>
-            <a href="">Categorias</a>
-            <a href="">Meus Pedidos</a> */}
-        
         
         <NavLink 
       to="/" 
@@ -201,12 +183,14 @@ const Header = () => {
     >
       Home
     </NavLink>
-    <NavLink 
-      to="/products" 
-      className={({ isActive }) => isActive ? "active-link" : ""}
-    >
-      Produtos
-    </NavLink>
+    <NavLink
+        to="/products"
+        className={({ isActive }) =>
+          isActive || location?.pathname.startsWith('/product') ? "active-link": ""
+        }
+      >
+        Produtos
+      </NavLink>
     <NavLink 
       to="/category" 
       className={({ isActive }) => isActive ? "active-link" : ""}
@@ -242,15 +226,7 @@ const Header = () => {
           </div>
         </div>
         
-      )} {/*<div className="ssm:hidden xl:block xl:pb-10 xl:-mt-2">
-         <ul className="flex gap-5 text-xl "> 
-          <div className="border-b-primary border-b-4">
-       <li className="bg-secundary px-3 "> 
-        <a href="" className="text-primary">Home</a></li></div>
-           <li> <a href="">Produtos</a></li>
-           <li><a href="">Categorias</a></li> 
-          <li>  <a href="">Meus Pedidos</a></li>
-          </ul> */}
+      )} 
           <div className="ssm:hidden xl:block xl:pb-10 xl:-mt-2">
    <div className="flex gap-5 text-xl "> 
 <NavLink 
@@ -259,12 +235,14 @@ const Header = () => {
     >
       Home
     </NavLink>
-    <NavLink 
-      to="/products" 
-      className={({ isActive }) => isActive ? "active-link" : ""}
-    >
-      Produtos
-    </NavLink>
+    <NavLink
+        to="/products"
+        className={({ isActive }) =>
+          isActive || location?.pathname.startsWith('/product') ? "active-link": ""
+        }
+      >
+        Produtos
+      </NavLink>
     <NavLink 
       to="/category" 
       className={({ isActive }) => isActive ? "active-link" : ""}

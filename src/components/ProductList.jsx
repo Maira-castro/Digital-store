@@ -9,27 +9,18 @@ const ProductListContainer = styled.div`
   justify-content: center;
   margin-top: 45px;
   margin-bottom: 20px;
+
 `;
 
-// const ProductListing = ({ products }) => {
-//   return (
-//     <ProductListContainer>
-//       {products.map((product, index) => (
-//         <ProductCard key={index} {...product} />
-        
-//       ))}
-//     </ProductListContainer>
-//   );
-// };
 const ProductListing = ({ products }) => {
   return (
     <ProductListContainer>
-      {products.map((product) => (
+      {products.map((product) => ( 
         <ProductCard key={product.id} {...product} />
+        
       ))}
     </ProductListContainer>
   );
 };
-
 
 export default ProductListing;
