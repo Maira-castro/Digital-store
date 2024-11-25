@@ -121,7 +121,7 @@ const Header = () => {
             </button>
           </div> 
 
-          <div className="flex justify-center content-center ssm:hidden md:hidden ssm:order-3 xl:order-2">
+          <div className="xl:flex justify-center content-center ssm:hidden md:hidden ssm:order-3 xl:order-2">
             <button
               
               onClick={handleSearchToggle}
@@ -161,10 +161,10 @@ const Header = () => {
 
             
           </div>
-          <div className="flex justify-center content-center ssm:order-3 xl:order-2 xl:hidden ssm:block">
+          <div className="flex justify-center content-center ssm:order-3 xl:order-2 xl:hidden">
             <button
               onClick={() => setIsSearchOpen(!isSearchOpen)}
-              className="bg-gray-200 hover:bg-gray-300 text-gray-700 p-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 order-2 xl:bg-light-gray-3 xl:rounded-r-lg xl:pl-1 "
+              className="bg-gray-200 hover:bg-gray-300 text-gray-700 p-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 order-2 xl:bg-light-gray-3 xl:rounded-r-lg xl:pl-1"
             >
               <svg
                 className="h-6 w-6"
@@ -194,6 +194,7 @@ const Header = () => {
             </div>
     
           </div>
+
           <div className="order-4 flex ssm:pr-8 xl:size-16 xl:-mr-20">
               <img src="/assets/mini-cart.svg" alt="" />
             </div>
