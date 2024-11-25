@@ -1,7 +1,11 @@
 import React from "react";
+import Logo from "./logo";
+
 
 const Footer = () => {
+
     return(
+     
         <footer className="px-12 overflow-x-hidden bg-dark-gray" >
       <div className="xl:flex xl:px-8 xl:justify-between text-white py-16 ">
       <div className="">
@@ -17,8 +21,8 @@ const Footer = () => {
         <i>
           <a href=""><img src="/assets/x.svg" alt="" /></a>
         </i>
-        </div>
-      </div>
+       </div>
+      </div> 
       <div className="ssm:flex ssm:space-x-16 py-10 xl:hidden">
       <div className="align-content-center justify-content-start leading-8">
         <div className="text-lg pb-1 text-white-color"><h3>Informação</h3></div>
@@ -86,7 +90,8 @@ const Footer = () => {
       </div>
       <div className="flex justify-center pt-2 pb-4 border-t opacity-60 text-white-color">
         <h5 className="text-white">@ 2024 Digital College</h5>
-      </div>
+         
+      </div> 
       
     </footer>
     )

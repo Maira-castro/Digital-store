@@ -31,7 +31,8 @@ const ProductOptions = ({
         display: "flex",
         gap: "12px", // Espaçamento entre as opções
         flexWrap: "wrap",
-        marginTop: "16px", // Espaçamento superior
+        marginTop: "16px",
+        marginBottom:"10px", // Espaçamento superior
       }}
     >
       {options.map((option, index) => (

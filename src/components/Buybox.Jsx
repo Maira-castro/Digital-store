@@ -19,7 +19,7 @@ const Name = styled.h1`
 
 const Reference = styled.p`
   font-size: 12px;
-  color: #F5F5F5;
+  color: #666666;
   margin: 0 0 16px;
 `;
 
@@ -49,7 +49,7 @@ const Stars = styled.div`
 
 const RatingText = styled.span`
   font-size: 14px;
-  color: var(--light-gray);
+  color: #8F8F8F;
 `;
 
 const PriceContainer = styled.div`
@@ -117,7 +117,7 @@ const BuyBox = ({
     <BuyBoxContainer>
       {/* Nome e Referência */}
       <Name>{name}</Name>
-      {reference && <Reference>Ref: {reference}</Reference>}
+      {reference && <Reference>REF: {reference}</Reference>}
 
       {/* Avaliações */}
       <RatingsContainer>
@@ -153,6 +153,7 @@ const BuyBox = ({
       {/* Variações de Produto */}
       <Legend>Tamanho</Legend>
       <ChildrenContainer>{children}</ChildrenContainer>
+    
 
       {/* Botão de Comprar */}
       <CTAButton>COMPRAR</CTAButton>

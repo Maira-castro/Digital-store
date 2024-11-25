@@ -14,18 +14,18 @@ const GalleryComponent = ({ images, width, height, radius }) => {
       setCurrentIndex(index);
     };
   
-    // Função para navegar para a próxima imagem
     const nextImage = () => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      if (currentIndex < images.length - 1) {
+        setCurrentIndex((prevIndex) => prevIndex + 1);
+      }
     };
   
     // Função para navegar para a imagem anterior
     const prevImage = () => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === 0 ? images.length - 1 : prevIndex - 1
-      );
+      if (currentIndex > 0) {
+        setCurrentIndex((prevIndex) => prevIndex - 1);
+      }
     };
-  
     return (
       <div style={{ images,borderRadius: radius, overflow: 'hidden' }}>
         {/* Carrossel de imagem principal */}
@@ -44,42 +44,43 @@ const GalleryComponent = ({ images, width, height, radius }) => {
           
           {/* Botões de navegação */}
           <button
-            onClick={prevImage}
-            style={{
-              
-              position: 'absolute',
-              top: '50%',
-              left: '10px',
-              transform: 'translateY(-50%)',
-              backgroundColor: 'rgba(0, 0, 0, 0.5)',
-              color: 'white',
-              border: 'none',
-              padding: '10px',
-              cursor: 'pointer',
-              borderRadius: '50%',
-            }}
-          >
-            &#60;
-          </button>
+          onClick={prevImage}
+          style={{
+            display: currentIndex === 0 ? 'none' : 'block', // Esconde a seta quando na primeira imagem
+            position: 'absolute',
+            top: '50%',
+            left: '10px',
+            transform: 'translateY(-50%)',
+            color: '#474747',
+            border: 'none',
+            padding: '10px',
+            cursor: 'pointer',
+            borderRadius: '50%',
+            fontSize: '24px',
+          }}
+        >
+          &#60;
+        </button>
           <button
             onClick={nextImage}
             style={{
-              
+              display: currentIndex === images.length - 1 ? 'none' : 'block', 
               position: 'absolute',
               top: '50%',
               right: '10px',
               transform: 'translateY(-50%)',
-              backgroundColor: 'rgba(0, 0, 0, 0.5)',
-              color: 'white',
+              color: '#474747',
               border: 'none',
               padding: '10px',
               cursor: 'pointer',
               borderRadius: '50%',
+              fontSize: '24px',
             }}
           >
             &#62;
           </button>
-        </div>
+
+        </div> 
   
         {/* Miniaturas abaixo */}
         <div
@@ -102,7 +103,7 @@ const GalleryComponent = ({ images, width, height, radius }) => {
                 objectFit: 'cover',
                 margin: '0 5px',
                 cursor: 'pointer',
-                border: currentIndex === index ? '2px solid blue' : 'none', // Destaque na imagem selecionada
+                border: currentIndex === index ? '2px solid #C92071' : 'none', // Destaque na imagem selecionada
                 borderRadius: '4px',
                 transition: 'border 0.3s',
                 flexShrink: 0, // Evitar que as miniaturas encolham

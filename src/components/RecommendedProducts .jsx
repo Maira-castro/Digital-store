@@ -3,12 +3,13 @@ import { useProducts } from './ProductsContext';
 import Section from './Section';
 import ProductList from './ProductList';
 
+
 const RecommendedProducts = () => {
   const { products } = useProducts();
   const recommendedProducts = products.slice(0, 4); // Mostra apenas 4 produtos
 
   return (
-    <div style={{ backgroundColor: '#F5F5F5' }}>
+    <div style={{ backgroundColor: '#F5F5F5',marginBottom:'-20px' }}>
     <Section
       title="Produtos recomendados"
       link={{
@@ -20,7 +21,9 @@ const RecommendedProducts = () => {
       <ProductList products={recommendedProducts} />
     
     </Section>
+    
     </div>
+    
   );
 };
 

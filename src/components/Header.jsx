@@ -3,6 +3,7 @@ import "../index.css";
 import {Link, NavLink, useLocation} from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import { SearchContext } from "./SearchContext";
+import Logo from "./logo";
 const Header = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,9 +38,9 @@ const Header = () => {
  items-center justify-between h-16"
         >
           <div className="flex items-center ssm:order-2 xl:order-1 xl:-ml-14">
-            <div className="xl:order-1">
-              <img src="./assets/logo.svg" alt="Logo" className=" ssm:w-32 xl:w-96" />
-            </div>
+              <div className=" ssm:w-32 xl:w-96" >
+              <Logo/>
+              </div>
             <div className="xl:hidden md:block ssm:hidden">
               <div className="ml-10 flex items-baseline space-x-4">
             
@@ -57,18 +58,12 @@ const Header = () => {
       >
         Produtos
       </NavLink>
-    <NavLink 
-      to="/category" 
-      className={({ isActive }) => isActive ? "active-link" : ""}
-    >
-      Categorias
-    </NavLink>
-    <NavLink 
-      to="/orders" 
-      className={({ isActive }) => isActive ? "active-link" : ""}
-    >
-      Meus Pedidos
-    </NavLink>
+      <a href="#" className="text-gray-900 font-medium">
+                  Categorias
+                </a>
+    <a href="#" className="text-gray-900 font-medium">
+                  Meus Pedidos
+                </a>
             
           
               </div>
@@ -160,14 +155,14 @@ const Header = () => {
               <input type="text" placeholder="Pesquisar" value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && handleSearchToggle()}
-          className="w-full xl:bg-light-gray-3 xl:pr-60 xl:ml-36 xl:pl-2 xl:py-4 xl:rounded-l-lg" />
+          className="w-full xl:bg-light-gray-3 xl:pr-60 xl:ml-0 xl:pl-2 xl:py-4 xl:rounded-l-lg" />
 
             </div>
 
             
           </div>
           <div className="order-4 flex ssm:pr-8 xl:size-16 xl:-mr-20">
-              <img src="./assets/mini-cart.svg" alt="" />
+              <img src="/assets/mini-cart.svg" alt="" />
             </div>
         </div>
       </div>
@@ -191,18 +186,12 @@ const Header = () => {
       >
         Produtos
       </NavLink>
-    <NavLink 
-      to="/category" 
-      className={({ isActive }) => isActive ? "active-link" : ""}
-    >
-      Categorias
-    </NavLink>
-    <NavLink 
-      to="/orders" 
-      className={({ isActive }) => isActive ? "active-link" : ""}
-    >
-      Meus Pedidos
-    </NavLink>
+      <a href="#" className="text-gray-900 font-medium">
+                  Categorias
+                </a>
+    <a href="#" className="text-gray-900 font-medium">
+                  Meus Pedidos
+                </a>
             
            
             <div className="ssm:border-t-primary ssm:flex ssm:flex-col ssm:text-center border-t px-8 ">
@@ -243,18 +232,18 @@ const Header = () => {
       >
         Produtos
       </NavLink>
-    <NavLink 
-      to="/category" 
-      className={({ isActive }) => isActive ? "active-link" : ""}
-    >
-      Categorias
-    </NavLink>
-    <NavLink 
-      to="/orders" 
+      <a href="#" className="text-gray-900 font-medium">
+                  Categorias
+                </a>
+    {/* <NavLink 
+      to="#" 
       className={({ isActive }) => isActive ? "active-link" : ""}
     >
       Meus Pedidos
-    </NavLink>
+    </NavLink> */}
+        <a href="#" className="text-gray-900 font-medium">
+                  Meus Pedidos
+                </a>
     </div>
      </div>
      </nav>

@@ -18,7 +18,7 @@ export const ProductsProvider = ({ children }) => {
       marka: 'k-swiss',
       category: 'Esporte e lazer',
       type: 'tenis',
-      stars: 5,
+      stars: 5.1,
     },
     { 
       id:2,
@@ -50,7 +50,7 @@ export const ProductsProvider = ({ children }) => {
       marka: 'k-swiss',
       category: 'Casual',
       type: 'tenis',
-      stars: 4,
+      stars: 4.1,
     },
     {
       id:4,
@@ -66,7 +66,7 @@ export const ProductsProvider = ({ children }) => {
       marka: 'k-swiss',
       category: 'Esporte e lazer',
       type: 'tenis',
-      stars: 4,
+      stars: 4.2,
     },
     {
       id:5,
@@ -81,7 +81,7 @@ export const ProductsProvider = ({ children }) => {
       marka: 'k-swiss',
       category: 'Esporte e lazer',
       type: 'tenis',
-      stars: 4,
+      stars: 4.3,
     },
     {
       id:6,
@@ -96,7 +96,7 @@ export const ProductsProvider = ({ children }) => {
       marka: 'k-swiss',
       category: 'Esporte e lazer',
       type: 'tenis',
-      stars: 4,
+      stars: 4.4,
     },
     {
       id:7,
@@ -111,7 +111,7 @@ export const ProductsProvider = ({ children }) => {
       marka: 'k-swiss',
       category: 'Casual',
       type: 'tenis',
-      stars: 4,
+      stars: 4.5,
     },
     {
       id:8,
@@ -126,7 +126,7 @@ export const ProductsProvider = ({ children }) => {
       marka: 'k-swiss',
       category: 'Esporte e lazer',
       type: 'tenis',
-      stars: 4,
+      stars: 4.6,
     },
     {
       id:9,
@@ -141,7 +141,7 @@ export const ProductsProvider = ({ children }) => {
       marka: 'k-swiss',
       category: 'Esporte e lazer',
       type: 'tenis',
-      stars: 4,
+      stars: 4.7,
     },
     {
       id:10,
@@ -156,7 +156,7 @@ export const ProductsProvider = ({ children }) => {
       marka: 'k-swiss',
       category: 'Esporte e lazer',
       type: 'tenis',
-      stars: 4,
+      stars: 4.8,
     },
     {
       id:11,
@@ -171,7 +171,7 @@ export const ProductsProvider = ({ children }) => {
       marka: 'k-swiss',
       category: 'Esporte e lazer',
       type: 'tenis',
-      stars: 4,
+      stars: 4.9,
     },
     {
       id:12,
@@ -186,7 +186,7 @@ export const ProductsProvider = ({ children }) => {
       marka: 'k-swiss',
       category: 'Esporte e lazer',
       type: 'tenis',
-      stars: 4,
+      stars: 5,
     },
     {
       id:13,
@@ -201,7 +201,7 @@ export const ProductsProvider = ({ children }) => {
       marka: 'k-swiss',
       category: 'Esporte e lazer',
       type: 'tenis',
-      stars: 4,
+      stars: 4.4,
     },
     {
       id:14,
@@ -216,7 +216,7 @@ export const ProductsProvider = ({ children }) => {
       marka: 'k-swiss',
       category: 'Casual',
       type: 'tenis',
-      stars: 4,
+      stars: 4.8,
     },
     {
       id:15,
@@ -231,7 +231,7 @@ export const ProductsProvider = ({ children }) => {
       marka: 'k-swiss',
       category: 'Esporte e lazer',
       type: 'tenis',
-      stars: 4,
+      stars: 5.1,
     },
 
   ]);

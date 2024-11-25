@@ -74,8 +74,8 @@ const ProductCard = ({id,images = [], name, price, priceDiscount, type }) => {
       <Type>{type}</Type>
       <ProductName>{name}</ProductName>
       <PriceContainer>
-        <Price $discount={priceDiscount}>${price}</Price>
-        {priceDiscount && <PriceDiscount>${priceDiscount}</PriceDiscount>}
+        <Price $discount={priceDiscount}>R$ {price} </Price>
+        {priceDiscount && <PriceDiscount>R$ {priceDiscount}</PriceDiscount>}
       </PriceContainer>
     </Card>
 
