@@ -32,12 +32,12 @@ const Header = () => {
 
   return (
 <nav className="xl:px-20">
-      <div className="ssm:max-w-7xl sm:px-6 xl:px-0 xl:py-12 mx-auto">
+      <div className="ssm:max-w-7xl sm:px-6 xl:px-0 xl:py-12 xl:min-w-full">
         <div
           className="flex 
  items-center justify-between h-16"
         >
-          <div className="flex items-center ssm:order-2 xl:order-1 xl:-ml-14">
+          <div className="flex items-center ssm:order-2 xl:order-1">
               <div className=" ssm:w-32 xl:w-96" >
               <Logo/>
               </div>
@@ -121,11 +121,11 @@ const Header = () => {
             </button>
           </div> 
 
-          <div className="flex justify-center content-center ssm:order-3 xl:order-2">
+          <div className="flex justify-center content-center ssm:hidden md:hidden ssm:order-3 xl:order-2">
             <button
               
               onClick={handleSearchToggle}
-              className="bg-gray-200 hover:bg-gray-300 text-gray-700 p-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 order-2 xl:bg-light-gray-3 xl:rounded-r-lg xl:pl-1 "
+              className="bg-gray-200 hover:bg-gray-300 text-gray-700 p-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 order-2 xl:bg-light-gray-3 xl:rounded-r-lg xl:pl-1 bg-primary"
             > 
   
               <svg
@@ -160,6 +160,39 @@ const Header = () => {
             </div>
 
             
+          </div>
+          <div className="flex justify-center content-center ssm:order-3 xl:order-2 xl:hidden ssm:block">
+            <button
+              onClick={() => setIsSearchOpen(!isSearchOpen)}
+              className="bg-gray-200 hover:bg-gray-300 text-gray-700 p-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 order-2 xl:bg-light-gray-3 xl:rounded-r-lg xl:pl-1 "
+            >
+              <svg
+                className="h-6 w-6"
+                xmlns="http://www.w3.org/200/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
+
+            <div
+              className={
+                isSearchOpen
+                  ? "block xl:flex order-1 ssm:absolute ssm:w-8/12 ssm:h-12 ssm:top-16 ssm:left-1/3 ssm:z-10 "
+                  : "hidden absolute top-full left-0 bg-white shadow-md rounded-md p-4"
+              }
+            >
+              <input type="text" placeholder="Pesquisar" className="w-full ssm:px-2 ssm:py-3 xl:bg-light-gray-3 xl:pr-60 xl:ml-36 xl:pl-2 xl:py-4 xl:rounded-l-lg " />
+            </div>
+    
           </div>
           <div className="order-4 flex ssm:pr-8 xl:size-16 xl:-mr-20">
               <img src="/assets/mini-cart.svg" alt="" />
