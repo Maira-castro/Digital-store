@@ -3,7 +3,7 @@ import "../index.css";
 import {Link, NavLink, useLocation} from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import { SearchContext } from "./SearchContext";
-import Logo from "./Logo";
+import Logo from "./logo";
 const Header = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
