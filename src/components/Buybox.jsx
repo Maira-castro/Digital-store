@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 // Estilos principais
-const BuyBoxContainer = styled.div`
+export const BuyBoxContainer = styled.div`
   border: 1px solid #CCCCCC;
   border-radius: 8px;
   padding: 16px;
@@ -11,26 +11,26 @@ const BuyBoxContainer = styled.div`
   background-color: white;
 `;
 
-const Name = styled.h1`
+export const Name = styled.h1`
   font-size: 32px;
   color: #1F1F1F  ;
   margin: 0 0 8px;
 `;
 
-const Reference = styled.p`
+export const Reference = styled.p`
   font-size: 12px;
   color: #666666;
   margin: 0 0 16px;
 `;
 
-const RatingsContainer = styled.div`
+export const RatingsContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
   margin-bottom: 16px;
 `;
 
-const Stars = styled.div`
+export const Stars = styled.div`
   display: flex;
   align-items: center;
   background-color:  #F6AA1C;
@@ -47,42 +47,42 @@ const Stars = styled.div`
   }
 `;
 
-const RatingText = styled.span`
+export const RatingText = styled.span`
   font-size: 14px;
   color: #8F8F8F;
 `;
 
-const PriceContainer = styled.div`
+export const PriceContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
   margin-bottom: 16px;
-`;
+`; 
 
-const Price = styled.span`
+export const Price = styled.span`
   font-size: ${(props) => (props.discount ? "16px" : "32px")};
   color: ${(props) => (props.discount ? '#CCCCCC' : '#474747')};
   text-decoration: ${(props) => (props.discount ? "line-through" : "none")};
 `;
 
-const PriceDiscount = styled.span`
+export const PriceDiscount = styled.span`
   font-size: 32px;
   color: #474747;
 `;
 
-const Legend = styled.h2`
+export const Legend = styled.h2`
   font-size: 20px;
   color: #666666;
   margin-bottom: 4px;
 `;
 
-const Description = styled.p`
+export const Description = styled.p`
   font-size: 14px;
   color: #474747;
   margin-bottom: 16px;
 `;
 
-const CTAButton = styled.button`
+export const CTAButton = styled.button`
   display: block;
   width: 100%;
   padding: 12px;
@@ -99,7 +99,7 @@ const CTAButton = styled.button`
   }
 `;
 
-const ChildrenContainer = styled.div`
+export const ChildrenContainer = styled.div`
   margin: 16px 0;
 `;
 
