@@ -37,12 +37,12 @@ const Header = () => {
           className="flex 
  items-center justify-between h-16"
         >
-          <div className="flex items-center ssm:order-2 xl:order-1 xl:-ml-14">
+          <div className="flex items-center ssm:order-2 xl:order-1 xl:-ml-10">
               <div className=" ssm:w-32 xl:w-96" >
               <Logo/>
               </div>
             <div className="xl:hidden md:block ssm:hidden">
-              <div className="ml-10 flex items-baseline space-x-4">
+              <div className="ml-0 flex items-baseline space-x-1">
             
               <NavLink 
       to="/" 
@@ -235,12 +235,6 @@ const Header = () => {
       <a href="#" className="text-gray-900 font-medium">
                   Categorias
                 </a>
-    {/* <NavLink 
-      to="#" 
-      className={({ isActive }) => isActive ? "active-link" : ""}
-    >
-      Meus Pedidos
-    </NavLink> */}
         <a href="#" className="text-gray-900 font-medium">
                   Meus Pedidos
                 </a>

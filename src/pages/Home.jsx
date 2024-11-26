@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 const Home = () => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -195,7 +196,8 @@ export const Colecao = () => {
       <div className="xl:pb-10">
         <div className="flex justify-between">
           <h2 className="ssm:text-lg xl:text-3xl" >Produtos em Alta</h2>
-          <h4 className="ssm:text-base xl:text-xl text-primary">ver mais ➞</h4>
+          <h4 className="ssm:text-base xl:text-xl text-primary">
+          <Link to="/products">ver mais ➞</Link></h4> 
         </div>
         <div className="grid ssm:grid-cols-2 ssm:gap-2 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 py-8 gap-5">
           <div className="justify-center">

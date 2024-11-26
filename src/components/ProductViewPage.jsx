@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import GalleryComponent from './GalleryComponent';
-import BuyBox from './Buybox'; 
+import BuyBox from './BuyBox'; 
 import { useProducts } from '../components/ProductsContext'; 
 import ProductOptions from './ProductOptions';
 import RecommendedProducts from './RecommendedProducts ';
