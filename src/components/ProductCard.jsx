@@ -21,6 +21,7 @@ const Image = styled.img`
   object-fit: cover;
   margin:0;
   line-height: 1.2;
+  cursor:pointer;
 `;
 
 const ProductName = styled.h2`

@@ -9,7 +9,7 @@ const RecommendedProducts = () => {
   const recommendedProducts = products.slice(0, 4); // Mostra apenas 4 produtos
 
   return (
-    <div style={{ backgroundColor: '#F5F5F5',marginBottom:'-20px' }}>
+    <div style={{ backgroundColor: '#F5F5F5',marginBottom:'-20px'}}>
     <Section
       title="Produtos recomendados"
       link={{

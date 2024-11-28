@@ -7,6 +7,7 @@ import Banner from "../components/BannerPublicidade";
 import ProductListingPage from "../pages/ProductListingPage";
 
 import ProductViewPage from "../components/ProductViewPage";
+import PaginaNaoEncontrada from "../pages/PaginaNaoEncontrada";
 const MainPage = () => {
     return (
         <>
@@ -26,6 +27,7 @@ const Paths = () => {
             <Route path="/products" element={<ProductListingPage/>}/>
             <Route path="/product/:id" element={<ProductViewPage/>} />
             </Route>
+            <Route path="*" element={<PaginaNaoEncontrada/>}/>
         </Routes>
         </BrowserRouter>
         </>

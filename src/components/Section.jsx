@@ -29,6 +29,7 @@ const SectionLink = styled.a`
 
   &:hover {
     text-decoration: underline;
+     cursor:pointer;
   }
 `;
 
