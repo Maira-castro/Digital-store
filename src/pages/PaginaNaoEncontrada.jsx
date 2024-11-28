@@ -6,9 +6,6 @@ const Container = styled.div`
    flex-direction: column;
    margin-top:20%;
 `;
-const h3 = styled.h3`
-  color:#C92071;
-`
 const PaginaNaoEncontrada = () => {
     return ( 
         <Container>
