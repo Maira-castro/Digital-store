@@ -9,7 +9,7 @@ const Logo = () => {
       alt="Logo"
       width="253px"
       height="44px" 
-    />;
+    />
   );
 };
 

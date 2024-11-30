@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
 const Home = () => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -73,11 +74,11 @@ export const Colecao = () => {
   };
 
   return (
-    <section className="overflow-x-hidden bg-gradient-to-t ssm:bg-light-gray-3 ssm:px-2 xl:px-12" >
+    <section className="xl:overflow-x-hidden bg-gradient-to-t ssm:bg-light-gray-3 ssm:px-2 xl:px-12 xl:min-w-1 lg:min-w-2 ssm:min-w-max sm:min-w-max">
       <div className="">
         <h3 className="ssm:text-xl xl:text-3xl">Coleções em destaque</h3>
       </div>
-      <div className="ssm:py-3 xl:flex xl:gap-5">
+      <div className="ssm:py-3 xl:flex xl:gap-5 ">
         <div
           className="w-full ssm:px-2 ssm:py-1 ssm:my-2 ssm:w-1/1 sm:w-1/2 lg:w-1/4 flex-grow flex-shrink-0 xl:pl-6 xl:px-10 xl:py-16 rounded-lg bg-right bg-no-repeat bg-contain bg-colecao"
           style={{

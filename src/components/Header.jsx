@@ -89,8 +89,7 @@ const Header = () => {
               </button>
               <NavLink
                 to="/cadastro"
-                className="bg-white hover:bg-gray-100 text-dark-gray-2 font-bold py-2 px-4 rounded underline xl:text-xl xl:pr-10 xl:-ml-10"
-              >
+                className="bg-white hover:bg-gray-100 text-dark-gray-2 font-bold py-2 px-4 rounded underline xl:text-xl xl:pr-10 xl:-ml-10">
                 Cadastre-se
               </NavLink>
             </div>
@@ -246,12 +245,15 @@ const Header = () => {
                 }}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
+                onClick={handleLogin}
               >
                 Entrar
               </button>
-              <a className=" underline cursor-pointer" href="">
+              <NavLink
+                to="/cadastro"
+                className="bg-white hover:bg-gray-100 text-dark-gray-2 font-bold py-2 px-4 rounded underline xl:text-xl xl:pr-10 xl:-ml-10">
                 Cadastre-se
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>

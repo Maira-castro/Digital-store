@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { FaGoogle, FaFacebook } from "react-icons/fa";
 
 const Login = () => {
@@ -9,7 +9,7 @@ const Login = () => {
       {" "}
       <div className="flex-grow bg-gradient-to-b from-secundary to-white-color flex items-center justify-center content-center">
         {" "}
-        <div className="bg-white-color p-8 rounded-lg shadow-lg w-full max-w-xl mx-20 py-14">
+        <div className="bg-white-color p-8 rounded-lg shadow-lg w-full max-w-xl mx-16 py-14 ">
           {" "}
           <h1 className="text-2xl font-bold mb-4">Crie sua conta</h1>{" "}
           <h4 className="text-lg mb-4">
@@ -23,9 +23,9 @@ const Login = () => {
             placeholder="Email"
             className="border border-gray-300 rounded p-2 mb-4 w-full"
           />{" "}
-          <button className="w-full bg-primary text-white-color p-2 rounded hover:bg-tertiary mb-4">
+          <NavLink to="/cadastro" className="block text-center bg-primary text-white-color p-2 rounded hover:bg-tertiary mb-4">
             Criar Conta
-          </button>{" "}
+          </NavLink>{" "}
           <p className="text-center mb-4">Ou faça login com</p>{" "}
           <div className="flex justify-center space-x-4">
             {" "}
