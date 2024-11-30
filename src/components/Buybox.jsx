@@ -43,7 +43,7 @@ const Stars = styled.div`
     margin-left: 4px;
     width: 16px;
     height: 16px;
-    filter: brightness(0) invert(1); /* Torna a imagem branca */
+    filter: brightness(0) invert(1);
   }
 `;
 
