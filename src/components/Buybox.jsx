@@ -160,7 +160,6 @@ const BuyBox = ({
     </BuyBoxContainer>
   );
 };
-
 // Validação de Propriedades
 BuyBox.propTypes = {
   name: PropTypes.string.isRequired,
