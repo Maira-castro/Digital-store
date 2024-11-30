@@ -1,12 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { darken } from 'polished';
-
+import { darken } from "polished";
 
 // Estilos principais
 const BuyBoxContainer = styled.div`
-  border: 1px solid #CCCCCC;
+  border: 1px solid #cccccc;
   border-radius: 8px;
   padding: 16px;
   max-width: 400px;
@@ -15,7 +14,7 @@ const BuyBoxContainer = styled.div`
 
 const Name = styled.h1`
   font-size: 32px;
-  color: #1F1F1F  ;
+  color: #1f1f1f;
   margin: 0 0 8px;
 `;
 
@@ -35,7 +34,7 @@ const RatingsContainer = styled.div`
 const Stars = styled.div`
   display: flex;
   align-items: center;
-  background-color:  #F6AA1C;
+  background-color: #f6aa1c;
   border-radius: 4px;
   padding: 4px 8px;
   font-size: 14px;
@@ -51,7 +50,7 @@ const Stars = styled.div`
 
 const RatingText = styled.span`
   font-size: 14px;
-  color: #8F8F8F;
+  color: #8f8f8f;
 `;
 
 const PriceContainer = styled.div`
@@ -63,7 +62,7 @@ const PriceContainer = styled.div`
 
 const Price = styled.span`
   font-size: ${(props) => (props.discount ? "16px" : "32px")};
-  color: ${(props) => (props.discount ? '#CCCCCC' : '#474747')};
+  color: ${(props) => (props.discount ? "#CCCCCC" : "#474747")};
   text-decoration: ${(props) => (props.discount ? "line-through" : "none")};
 `;
 
@@ -90,16 +89,15 @@ const CTAButton = styled.button`
   padding: 12px;
   font-size: 16px;
   color: white;
-  background-color: #F6AA1C;
+  background-color: #f6aa1c;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
 
   &:hover {
-  background-color: ${darken(0.1, '#F6AA1C')};
-}
-
+    background-color: ${darken(0.1, "#F6AA1C")};
+  }
 `;
 
 const ChildrenContainer = styled.div`
@@ -124,14 +122,14 @@ const BuyBox = ({
 
       {/* Avaliações */}
       <RatingsContainer>
-  {stars && (
-    <Stars>
-      {stars}
-      <img src="/assets/star-icon.svg" alt="Estrela" />
-    </Stars>
-  )}
-  {rating && <RatingText>({rating} avaliações)</RatingText>}
-</RatingsContainer>
+        {stars && (
+          <Stars>
+            {stars}
+            <img src="/assets/star-icon.svg" alt="Estrela" />
+          </Stars>
+        )}
+        {rating && <RatingText>({rating} avaliações)</RatingText>}
+      </RatingsContainer>
 
       {/* Preços */}
       <PriceContainer>
@@ -156,7 +154,6 @@ const BuyBox = ({
       {/* Variações de Produto */}
       <Legend>Tamanho</Legend>
       <ChildrenContainer>{children}</ChildrenContainer>
-    
 
       {/* Botão de Comprar */}
       <CTAButton>COMPRAR</CTAButton>
@@ -166,13 +163,13 @@ const BuyBox = ({
 
 // Validação de Propriedades
 BuyBox.propTypes = {
-    name: PropTypes.string.isRequired,
-    reference: PropTypes.string,
-    stars: PropTypes.number.isRequired,
-    rating: PropTypes.number,
-    price: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-    priceDiscount: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    description: PropTypes.string,
-    children: PropTypes.node,
-  };
+  name: PropTypes.string.isRequired,
+  reference: PropTypes.string,
+  stars: PropTypes.number.isRequired,
+  rating: PropTypes.number,
+  price: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  priceDiscount: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  description: PropTypes.string,
+  children: PropTypes.node,
+};
 export default BuyBox;

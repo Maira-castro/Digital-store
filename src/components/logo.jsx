@@ -5,11 +5,11 @@ import styled from 'styled-components';
 const Logo = () => {
   return (
     <img 
-      src={logoImage} 
-      alt="Logo" 
-      width="253px" 
+      src={logoImage}
+      alt="Logo"
+      width="253px"
       height="44px" 
-    />
+    />;
   );
 };
 
