@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { darken } from 'polished';
+
 
 // Estilos principais
 const BuyBoxContainer = styled.div`
@@ -95,8 +97,9 @@ const CTAButton = styled.button`
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: darken(#F6AA1C, 10%);
-  }
+  background-color: ${darken(0.1, '#F6AA1C')};
+}
+
 `;
 
 const ChildrenContainer = styled.div`
@@ -167,7 +170,7 @@ BuyBox.propTypes = {
     reference: PropTypes.string,
     stars: PropTypes.number.isRequired,
     rating: PropTypes.number,
-    price: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired, // Permite string ou número
+    price: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     priceDiscount: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     description: PropTypes.string,
     children: PropTypes.node,
