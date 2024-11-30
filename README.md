@@ -11,3 +11,4 @@ O desenvolvimento deste projeto foi realizado por:
 ([Edward0k2](https://github.com/edward0k2))
 
 # Digital_College
+# Digital_Store
