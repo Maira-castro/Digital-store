@@ -84,9 +84,6 @@ export const Colecao = () => {
           }}
         >
           <div className="text-left ssm:p-2">
-            <p className="ssm:px-1 ssm:py-1 ssm:text-base xl:px-3 xl:py-2 w-max rounded-2xl xl:text-2xl text-gray-700 bg-promo">
-              <b>30% OFF</b>
-            </p>
             <h2 className="ssm:text-2xl ssm:my-5 xl:text-5xl font-bold my-7">
               {" "}
               Novo drop <br /> Supreme{" "}
@@ -108,9 +105,6 @@ export const Colecao = () => {
           }}
         >
           <div className="text-left ssm:p-2">
-            <p className="ssm:px-1 ssm:py-1 ssm:text-base xl:px-3 xl:py-2 w-max rounded-2xl xl:text-2xl text-gray-700 bg-promo">
-              <b>30% OFF</b>
-            </p>
             <h2 className="ssm:text-2xl ssm:my-5 xl:text-5xl font-bold my-7">
               {" "}
               Coleção <br /> Adidas{" "}
@@ -132,9 +126,6 @@ export const Colecao = () => {
           }}
         >
           <div className="text-left ssm:p-2">
-            <p className="ssm:px-1 ssm:py-1 ssm:text-base xl:px-3 xl:py-2 w-max rounded-2xl xl:text-2xl text-gray-700 bg-promo">
-              <b>30% OFF</b>
-            </p>
             <h2 className="ssm:text-2xl ssm:my-5 xl:text-5xl font-bold my-7">
               {" "}
               Novo <br /> Beats Bass{" "}
@@ -151,20 +142,15 @@ export const Colecao = () => {
         </div>
       </div>
 
-      <div className="w-full ssm:py-1 ssm:my-2 ssm:w-1/1 sm:w-full lg:full flex-grow flex-shrink-0 xl:pl-6 xl:px-10 xl:py-16 rounded-lg bg-right bg-no-repeat bg-contain bg-bg-white-color">
+      <div className="w-full ssm:py-1 ssm:my-2 ssm:w-full sm:w-full lg:full flex-grow flex-shrink-0 xl:pl-6 xl:px-10 xl:py-16 rounded-lg bg-right bg-no-repeat bg-contain bg-bg-white-color">
         <h3 className="ssm:text-2xl md:text-3xl">Coleções em destaque</h3>
 
-        <div className="flex ssm:flex-col md:flex-row justify-center py-4 gap-16 text-lg text-dark-gray">
-
-
-
-
-
+        <div className="flex ssm:flex-col ssm:max-w-full  md:flex-row justify-center py-4 gap-16 text-lg text-dark-gray">
           <div className="flex ssm:flex-col  ssm:justify-center ssm:items-center ">
             <div className="rounded-full  mb-2  p-6 flex justify-center bg-white-color">
               <img src="./assets/coleção/1-camisetas.svg" alt="" />
             </div>
-            <h4  className="text-xl">Camisetas</h4>
+            <h4 className="text-xl">Camisetas</h4>
           </div>
 
           <div className="flex ssm:flex-col  ssm:justify-center ssm:items-center ">
@@ -190,6 +176,152 @@ export const Colecao = () => {
               <img className="" src="./assets/coleção/5-tenis.svg" alt="" />
             </div>
             <h4 className="text-xl">Tênis</h4>
+          </div>
+        </div>
+      </div>
+
+      <div className=" w-full ssm:py-1 ssm:my-2 ssm:w-full sm:w-full lg:full flex-grow flex-shrink-0 xl:pl-6 xl:px-10 xl:py-16 rounded-lg bg-right bg-no-repeat bg-contain bg-bg-white-color">
+        <div className="flex justify-between">
+          <h2 className="ssm:text-lg xl:text-3xl">Produtos em Alta</h2>
+          <h4 className="ssm:text-base xl:text-xl text-primary">ver mais ➞</h4>
+        </div>
+
+        <div className="grid ssm:grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-2">
+          <div className="flex justify-center w-full flex-col">
+            <div className="flex justify-center p-4 bg-white-color relative">
+              <img
+                src="./assets/produto.png"
+                alt=""
+                className="w-full max-w-full ssm:max-w-[150px] sm:max-w-[200px] h-auto object-contain"
+              />
+            </div>
+            <h4 className="ssm:text-sm xl:text-xl">
+              <b>Tênis</b>
+            </h4>
+            <h2 className="ssm:text-lg">K-Swiss V8 - Masculino</h2>
+            <div className="flex gap-2 ssm:text-lg">
+              <h1 className="line-through opacity-70">$200</h1>
+              <h1>$100</h1>
+            </div>
+          </div>
+          <div className="flex justify-center w-full flex-col">
+            <div className="flex justify-center p-4 bg-white-color relative">
+              <img
+                src="./assets/produto.png"
+                alt=""
+                className="w-full max-w-full ssm:max-w-[150px] sm:max-w-[200px] h-auto object-contain"
+              />
+            </div>
+            <h4 className="ssm:text-sm xl:text-xl">
+              <b>Tênis</b>
+            </h4>
+            <h2 className="ssm:text-lg">K-Swiss V8 - Masculino</h2>
+            <div className="flex gap-2 ssm:text-lg">
+              <h1 className="line-through opacity-70">$200</h1>
+              <h1>$100</h1>
+            </div>
+          </div>
+          <div className="flex justify-center w-full flex-col">
+            <div className="flex justify-center p-4 bg-white-color relative">
+              <img
+                src="./assets/produto.png"
+                alt=""
+                className="w-full max-w-full ssm:max-w-[150px] sm:max-w-[200px] h-auto object-contain"
+              />
+            </div>
+            <h4 className="ssm:text-sm xl:text-xl">
+              <b>Tênis</b>
+            </h4>
+            <h2 className="ssm:text-lg">K-Swiss V8 - Masculino</h2>
+            <div className="flex gap-2 ssm:text-lg">
+              <h1 className="line-through opacity-70">$200</h1>
+              <h1>$100</h1>
+            </div>
+          </div>
+          <div className="flex justify-center w-full flex-col">
+            <div className="flex justify-center p-4 bg-white-color relative">
+              <img
+                src="./assets/produto.png"
+                alt=""
+                className="w-full max-w-full ssm:max-w-[150px] sm:max-w-[200px] h-auto object-contain"
+              />
+            </div>
+            <h4 className="ssm:text-sm xl:text-xl">
+              <b>Tênis</b>
+            </h4>
+            <h2 className="ssm:text-lg">K-Swiss V8 - Masculino</h2>
+            <div className="flex gap-2 ssm:text-lg">
+              <h1 className="line-through opacity-70">$200</h1>
+              <h1>$100</h1>
+            </div>
+          </div>
+          <div className="flex justify-center w-full flex-col">
+            <div className="flex justify-center p-4 bg-white-color relative">
+              <img
+                src="./assets/produto.png"
+                alt=""
+                className="w-full max-w-full ssm:max-w-[150px] sm:max-w-[200px] h-auto object-contain"
+              />
+            </div>
+            <h4 className="ssm:text-sm xl:text-xl">
+              <b>Tênis</b>
+            </h4>
+            <h2 className="ssm:text-lg">K-Swiss V8 - Masculino</h2>
+            <div className="flex gap-2 ssm:text-lg">
+              <h1 className="line-through opacity-70">$200</h1>
+              <h1>$100</h1>
+            </div>
+          </div>
+          <div className="flex justify-center w-full flex-col">
+            <div className="flex justify-center p-4 bg-white-color relative">
+              <img
+                src="./assets/produto.png"
+                alt=""
+                className="w-full max-w-full ssm:max-w-[150px] sm:max-w-[200px] h-auto object-contain"
+              />
+            </div>
+            <h4 className="ssm:text-sm xl:text-xl">
+              <b>Tênis</b>
+            </h4>
+            <h2 className="ssm:text-lg">K-Swiss V8 - Masculino</h2>
+            <div className="flex gap-2 ssm:text-lg">
+              <h1 className="line-through opacity-70">$200</h1>
+              <h1>$100</h1>
+            </div>
+          </div>
+          <div className="flex justify-center w-full flex-col">
+            <div className="flex justify-center p-4 bg-white-color relative">
+              <img
+                src="./assets/produto.png"
+                alt=""
+                className="w-full max-w-full ssm:max-w-[150px] sm:max-w-[200px] h-auto object-contain"
+              />
+            </div>
+            <h4 className="ssm:text-sm xl:text-xl">
+              <b>Tênis</b>
+            </h4>
+            <h2 className="ssm:text-lg">K-Swiss V8 - Masculino</h2>
+            <div className="flex gap-2 ssm:text-lg">
+              <h1 className="line-through opacity-70">$200</h1>
+              <h1>$100</h1>
+            </div>
+          </div>
+          <div className="flex justify-center w-full flex-col">
+            <div className="flex justify-center p-4 bg-white-color relative">
+              <img
+                src="./assets/produto.png"
+                alt=""
+                className="w-full max-w-full ssm:max-w-[150px] sm:max-w-[200px] h-auto object-contain"
+              />
+            </div>
+            <h4 className="ssm:text-sm xl:text-xl">
+              <b>Tênis</b>
+            </h4>
+            <h2 className="ssm:text-lg">K-Swiss V8 - Masculino</h2>
+            <div className="flex gap-2 ssm:text-lg">
+              <h1 className="line-through opacity-70">$200</h1>
+              <h1>$100</h1>
+            </div>
           </div>
         </div>
       </div>
