@@ -43,7 +43,7 @@ O **Digital_College_Store** é um sistema de e-commerce que exibe informações 
 O desenvolvimento deste projeto foi realizado por:  
 - **[Maira Stefane Nunes Castro](https://github.com/Maira-castro)**: Responsável pelas páginas 2 e 3.
 -  **[Jesus Eduardo Pereira Lima](https://github.com/edward0k2)**: Responsável pela página Home.
- **[Maria Isabel Mota Moura]**: Responsável pelas páginas de Login e Cadastro.
+- **[Maria Isabel Mota Moura]**: Responsável pelas páginas de Login e Cadastro.
 ## Imagens
 
 As imagens do projeto podem ser acessadas [aqui](https://github.com/Maira-castro/Digital-store/tree/main/public/assets).
