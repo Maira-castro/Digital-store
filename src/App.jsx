@@ -6,6 +6,7 @@ import Banner from './components/BannerPublicidade';
 import "./index.css";
 import Paths from './routes/Paths';
 
+
 function App() {
 
   return (
