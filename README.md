@@ -36,7 +36,7 @@ O **Digital_College_Store** é um sistema de e-commerce que exibe informações 
 - **Filtros**: Permitem ao usuário refinar os resultados da pesquisa com base em critérios específicos, garantindo uma navegação mais direcionada e eficiente.
 - **Ordenação por Preço**: Classifica os produtos de forma crescente ou decrescente pelo preço, ajudando os usuários a encontrar produtos dentro da sua faixa de preço desejada.
 - **Campo de Pesquisa**: O campo de pesquisa é dinâmico e ajusta os resultados conforme o usuário digita, proporcionando uma experiência de busca mais eficiente.
-- **Botão "Ver Mais"**: Na página inicial e nos detalhes dos produtos, o botão **"Ver Mais"** direciona o usuário para uma página com todos os produtos disponíveis, expandindo as opções de visualização e navegação.
+- **Botão "Ver Mais"**: Na página de detalhes dos produtos, o botão **"Ver Mais"** direciona o usuário para uma página com todos os produtos disponíveis, expandindo as opções de visualização e navegação.
 
 ## Equipe
 
